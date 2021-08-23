@@ -1,0 +1,238 @@
+@import "styles";
+
+:host {
+  width: 100%;
+  height: 80px;
+}
+
+nav {
+  background-color: $bbdo-hr-blue-primary;
+
+  &.bg-dark {
+    background-color: $bbdo-hr-blue-primary !important;
+  }
+
+  a {
+    &.navbar-brand {
+      font-size: 36px;
+      letter-spacing: -1px;
+      line-height: 48px;
+      color: $bbdo-hr-white !important;
+      font-weight: 600;
+      margin-right: 2.1rem;
+    }
+  }
+
+  button {
+    &.navbar-toggler {
+      border: 2px solid $bbdo-hr-white !important;
+      border-radius: 50em;
+      height: 40px;
+      width: 40px;
+      padding: .25rem 0.5rem;
+      line-height: .9;
+
+      .navbar-toggler-icon {
+        background-image: none;
+        height: .9em;
+        width: .9em;
+        color: $bbdo-hr-white;
+
+        &:before {
+          font-family: "Font Awesome 5 Free";
+          content: "\f0c9";
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      a {
+        &.nav-link {
+        color: $bbdo-hr-white !important;
+        font-size: 20px;
+        margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  nav {
+    a {
+      &.navbar-brand {
+        font-size: 38px;
+        margin-right: 3.1rem;
+      }
+    }
+  }
+}
+
+// iPhone 6/7/8/x/11 pro
+@media (min-width: 375px) {
+  nav {
+    a {
+      &.navbar-brand {
+        font-size: 40px;
+        margin-right: 3.3rem;
+      }
+    }
+  }
+}
+
+// iPhone 11 Pro
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3) { }
+
+// iPhone 12 + 12 Pro
+@media (min-width: 390px) {
+  nav {
+    a {
+      &.navbar-brand {
+        margin-right: 3.5rem;
+      }
+    }
+  }
+}
+
+// Pixel 2
+@media (min-width: 411px) {
+
+  nav {
+    a {
+      &.navbar-brand {
+        font-size: 42px;
+        margin-right: 3.2rem;
+      }
+    }
+
+    button {
+      margin-right: 1rem;
+    }
+  }
+}
+
+// iPhone 6/7/8/11/pro Max Plus
+@media (min-width: 414px) {}
+
+// iPad // Portrait and Landscape
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) { }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  nav {
+    a {
+      &.navbar-brand {
+        margin-right: 0;
+      }
+    }
+
+    .navbar-nav {
+      margin-bottom: 0 !important;
+
+      .nav-item {
+        a {
+          &.nav-link {
+          color: $bbdo-hr-white !important;
+          font-size: 16px;
+          margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  nav {
+    a {
+      &.navbar-brand {
+        font-size: 42px;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        a {
+          &.nav-link {
+            font-size: 18px;
+            letter-spacing: .5px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  nav {
+    .container-fluid {
+      width: 1140px;
+
+      a {
+        &.navbar-brand {
+          font-size: 48px;
+        }
+      }
+
+      .navbar-nav {
+        .nav-item {
+          a {
+            &.nav-link {
+              font-size: 18px;
+              letter-spacing: .5px;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  nav {
+    .container-fluid {
+      width: 1320px;
+
+      a {
+        &.navbar-brand {
+          font-size: 48px;
+        }
+      }
+
+      .navbar-nav {
+        .nav-item {
+          a {
+            &.nav-link {
+              font-size: 18px;
+              letter-spacing: .5px;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1680px and up)
+@media (min-width: 1680px) {}
+
+// XX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {}

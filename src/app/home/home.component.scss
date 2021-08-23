@@ -1,0 +1,325 @@
+@import 'colors';
+
+.home {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: $bbdo-hr-white !important;
+
+  .container-fluid {
+    .row {
+      flex-direction: column-reverse;
+
+      .home__svg {
+        svg {
+          transform: scale(.9);
+        }
+      }
+
+      .home__text {
+        flex-direction: column;
+
+        .home__text__welcome {
+          font-size: 52px;
+          font-family: futura-pt, sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          text-transform: uppercase;
+          justify-content: center;
+          letter-spacing: -1.6px;
+          line-height: 80px;
+        }
+
+        .home__text__divider {
+          svg {
+          transform: scale(.8);
+          }
+        }
+
+        .home__text__description {
+          font-family: 'futura-pt', sans-serif;
+          font-weight: 600;
+          font-style: normal;
+          font-size: 21px;
+          line-height: 27px;
+          text-align: center;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// iPhone 6/7/8/x/11 pro
+@media (min-width: 375px) {
+  .home {
+    .container-fluid {
+      .row {
+        .home__text {
+          .home__text__divider {
+            svg {
+            transform: scale(.7);
+            }
+          }
+          .home__text__description {
+            padding-left: .75rem;
+            padding-right: .75rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPhone 11 Pro
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3) {}
+
+// iPhone 12 + 12 Pro
+@media (min-width: 390px) {
+  .home {
+    .container-fluid {
+      .row {
+        .home__text {
+          .home__text__welcome {
+            font-size: 56px;
+          }
+
+          .home__text__description {
+            font-size: 23px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Pixel 2
+@media (min-width: 411px) {}
+
+// iPhone 6/7/8/11/pro Max Plus
+@media (min-width: 414px) {}
+
+// iPad // Portrait and Landscape
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) { }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .home {
+    .container-fluid {
+      .row {
+        flex-direction: row;
+
+        .home__svg {
+          svg {
+            transform: scale(1);
+          }
+        }
+
+        .home__text {
+          padding-left: 0;
+          justify-content: center;
+
+          .home__text__welcome {
+            font-size: 56px;
+          }
+
+          .home__text__divider {
+            svg {
+            transform: scale(.8);
+            }
+          }
+
+          .home__text__description {
+            font-size: 20px;
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .home {
+    .container-fluid {
+      .row {
+        justify-content: space-evenly;
+
+        .home__svg {
+          svg {
+            transform: scale(.9);
+          }
+        }
+
+        .home__text {
+          .home__text__welcome {
+            font-size: 56px;
+          }
+
+          .home__text__divider {
+            svg {
+              transform: scale(.6);
+            }
+          }
+
+          .home__text__description {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .home {
+    .container-fluid {
+      .row {
+        .home__svg {
+          svg {
+            transform: scale(1);
+          }
+        }
+
+        .home__text {
+          .home__text__welcome {
+            font-size: 66px;
+          }
+
+          .home__text__divider {
+            svg {
+              transform: scale(.55);
+            }
+          }
+
+          .home__text__description {
+            font-size: 26px;
+            line-height: 30px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .home {
+    .container-fluid {
+      .row {
+        justify-content: space-evenly;
+
+        .home__svg {
+          svg {
+             transform: scale(.95);
+          }
+        }
+
+        .home__text {
+          .home__text__welcome {
+            font-size: 74px;
+            line-height: 90px;
+          }
+
+          .home__text__divider {
+            svg {
+              transform: scale(.6);
+            }
+          }
+
+          .home__text__description {
+            font-size: 28px;
+            line-height: 34px;
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1660px and up)
+@media (min-width: 1660px) {
+  .home {
+    .container-fluid {
+      .row {
+        justify-content: center;
+
+        .home__text {
+          .home__text__welcome {
+            font-size: 82px;
+            letter-spacing: 1px;
+            line-height: 94px;
+          }
+
+          .home__text__divider {
+            svg {
+              transform: scale(.5);
+            }
+          }
+
+          .home__text__description {
+            font-size: 28px;
+            line-height: 36px;
+            padding-left: 6.5rem;
+            padding-right: 6.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {
+  .home {
+    .container-fluid {
+      .row {
+
+        .home__svg {
+          svg {
+             transform: scale(.9);
+          }
+        }
+
+        .home__text {
+          .home__text__welcome {
+            font-size: 88px;
+            letter-spacing: 1px;
+            line-height: 96px;
+          }
+
+          .home__text__divider {
+            svg {
+              transform: scale(.45);
+            }
+          }
+
+          .home__text__description {
+            font-size: 36px;
+            line-height:42px;
+            padding-left: 6.5rem;
+            padding-right: 6.5rem;
+          }
+        }
+      }
+    }
+  }
+}
