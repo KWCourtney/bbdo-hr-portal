@@ -17,11 +17,7 @@ body {
   line-height: 1.3;
   font-family: 'Poppins', sans-serif !important;
   overscroll-behavior: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  color: $bbdo-hr-base-text;
 }
 
 .bbdo-hr-body-wrap  {
@@ -34,7 +30,7 @@ body {
   flex: 0 0 80px;
   display: flex;
   align-items: center;
-  background-color: #1458E4;
+  background-color: $bbdo-hr-blue-primary;
 }
 
 .bbdo-hr-content-wrap {
@@ -61,17 +57,8 @@ a {
   }
 }
 
-
 // iPhone 6/7/8/x/11 pro
-@media (min-width: 375px) {
-
-  .bbdo-hr-header-wrap {
-    flex: 0 0 100px;
-    display: flex;
-    align-items: center;
-    background-color: #1458E4;
-  }
-}
+@media (min-width: 375px) {}
 
 ///// iPhone 11 Pro
 @media only screen

@@ -1,0 +1,195 @@
+@import 'styles';
+
+/* ====================
+AWARDS
+==================== */
+
+.awards {
+  height: 100%;
+
+  .row {
+    min-height: 150px;
+  }
+
+  &__details {
+    text-align: center;
+
+
+    &__header {
+      font-size: 40px;
+      font-family: $futura-pt;
+      font-weight: 800;
+      font-style: normal;
+      line-height: 56px;
+      text-transform: lowercase;
+    }
+
+    &__description {
+      font-size: 12px;
+      font-family: $poppins;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 18px;
+    }
+  }
+
+  .card-body-inner {
+    font-family: $poppins;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    //border: 4px dotted blue;
+
+    .awards-name {
+      font-size: 20px;
+      line-height: 19px;
+    }
+
+    .awards-source {
+      font-size: 14px;
+      line-height: 19px;
+      color: $bbdo-hr-base-text-90p;
+    }
+
+    .awards-year {
+      font-size: 11px;
+      line-height: 19px;
+      color: $bbdo-hr-base-text-70p;
+    }
+  }
+}
+
+// iPhone 6/7/8/x/11 pro
+@media (min-width: 375px) {
+  .awards {
+    &__details {
+      &__header {
+        font-size: 42px;
+      }
+
+      &__description {
+        font-size: 12px;
+      }
+    }
+
+    .card-body-inner {
+      .awards-name {
+        font-size: 21px;
+        line-height: 19px;
+      }
+
+      .awards-source {
+        font-size: 14px;
+        line-height: 19px;
+        color: $bbdo-hr-base-text-90p;
+      }
+
+      .awards-year {
+        font-size: 11px;
+        line-height: 19px;
+        color: $bbdo-hr-base-text-70p;
+      }
+    }
+  }
+}
+
+// iPhone 11 Pro
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3) {}
+
+// iPhone 12 + 12 Pro
+@media only screen
+    and (device-width: 390px)
+    and (device-height: 844px)
+    and (-webkit-device-pixel-ratio: 3) { }
+
+  @media only screen
+    and (device-width: 428px)
+    and (device-height: 926px)
+    and (-webkit-device-pixel-ratio: 3) { }
+
+
+// Pixel 2
+@media (min-width: 411px) {}
+
+// iPhone 6/7/8/11/pro Max Plus
+@media (min-width: 414px) {}
+
+// iPad // Portrait and Landscape
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) { }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+
+
+  .awards {
+    &__details {
+      text-align: left;
+
+      &__header {
+        font-size: 70px;
+        font-weight: 800;
+        font-style: normal;
+        line-height: 56px;
+        text-transform: lowercase;
+      }
+
+      &__description {
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 24px;
+      }
+    }
+
+    .card-body-inner {
+      font-family: $poppins;
+      font-weight: 600;
+      font-style: normal;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      //border: 4px dotted blue;
+
+      .awards-name {
+        font-size: 20px;
+        line-height: 19px;
+      }
+
+      .awards-source {
+        font-size: 14px;
+        line-height: 19px;
+        color: $bbdo-hr-base-text-90p;
+      }
+
+      .awards-year {
+        font-size: 11px;
+        line-height: 19px;
+        color: $bbdo-hr-base-text-70p;
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
+
+// XX-Large devices (larger desktops, 1660px and up)
+@media (min-width: 1660px) {}
+
+// XX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {}

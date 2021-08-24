@@ -1,1 +1,43 @@
-<p>awards works!</p>
+<div class="awards">
+  <div class="container h-100">
+    <div class="row">
+      <div class="col-md-12 awards__details">
+        <!-- Awards Header + Description -->
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-4 awards__details__header">
+            {{header}}
+          </div>
+          <div class="col-sm-12 col-md-8 px-4 awards__details__description">
+            {{description}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 custom-cards">
+          <!-- Awards Cards -->
+          <ng-container *ngFor="let award of awards">
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="card-body-inner">
+                  <div class="col-12 awards-icon mb-2">
+                    <img src="./assets/images/{{ award.icon }}.svg" alt="{{award.source}}">
+                  </div>
+                  <div class="col-12 awards-name mb-1">
+                    {{ award.name }}
+                  </div>
+                  <div class="col-12 awards-source">
+                    {{ award.source }}
+                  </div>
+                  <div class="col-12 awards-year">
+                    {{ award.year }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

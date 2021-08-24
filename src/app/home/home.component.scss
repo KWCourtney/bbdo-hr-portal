@@ -1,4 +1,4 @@
-@import 'colors';
+@import 'styles';
 
 .home {
   height: 100%;
@@ -8,8 +8,6 @@
 
   .container-fluid {
     .row {
-      flex-direction: column-reverse;
-
       .home__svg {
         svg {
           transform: scale(.9);
@@ -21,7 +19,7 @@
 
         .home__text__welcome {
           font-size: 52px;
-          font-family: futura-pt, sans-serif;
+          font-family: 'futura-pt', sans-serif;
           font-weight: 800;
           font-style: normal;
           text-transform: uppercase;
@@ -119,7 +117,7 @@
   .home {
     .container-fluid {
       .row {
-        flex-direction: row;
+        // flex-direction: row;
 
         .home__svg {
           svg {
