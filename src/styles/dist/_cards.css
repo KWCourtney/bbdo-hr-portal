@@ -20,11 +20,6 @@ CARDS
   text-align: center;
   border: none;
 }
-.custom-cards .card .card-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 @media (min-width: 411px) {
   .custom-cards .card {

@@ -59,19 +59,72 @@ export class DataService {
     },
   ];
 
-  quotes = [
-    {id: 111, name: "zzContact 001", description: "Contact 001 des", email: "xxxc001@email.com"},
-    {id: 112, name: "zzContact 002", description: "Contact 002 des", email: "xxxc002@email.com"},
-    {id: 113, name: "zzContact 003", description: "Contact 003 des", email: "xxxc003@email.com"},
-    {id: 114, name: "zzContact 004", description: "Contact 004 des", email: "xxxc004@email.com"}
+  benefits = [
+    {
+      id: 1,
+      icon: "benefits-ADP",
+      name: "ADP",
+      text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+      link: "cc",
+    },
+    {
+      id: 2,
+      icon: "benefits-education-benefit",
+      name: "Education Benefit",
+      text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+      link: "cc",
+    },
+    {
+      id: 3,
+      icon: "benefits-employee-stock",
+      name: "Employee Stock",
+      text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+      link: "cc",
+    },
+    {
+      id: 4,
+      icon: "benefits-fidelity",
+      name: "Fidelity",
+      text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+      link: "cc",
+    },
+    {
+      id: 5,
+      icon: "benefits-health-benefits",
+      name: "Health Benefits",
+      text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+      link: "cc",
+    },
+    {
+      id: 6,
+      icon: "benefits-new-parent",
+      name: "New Parent",
+      text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+      link: "cc",
+    },
+    {
+      id: 7,
+      icon: "benefits-oasys",
+      name: "OASYS",
+      text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+      link: "cc",
+    },
+    {
+      id: 8,
+      icon: "benefits-reach",
+      name: "Reach",
+      text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+      link: "cc",
+    },
   ];
 
-  public getAwards():Array<{id: any, icon: any, name      : any, source: any, year: any,}>{
+
+  public getAwards():Array<{id: any, icon: any, name: any, source: any, year: any,}>{
     return this.awards;
   }
 
-  public getQuotes():Array<{id: any, name: any, description: any, email: any}>{
-    return this.quotes;
+  public getBenefits():Array<{id: any, icon: any, name: any, text: any, link: any,}>{
+    return this.benefits;
   }
 
   // public createContact(contact: {id: any, name: any, description: any, email: any}){

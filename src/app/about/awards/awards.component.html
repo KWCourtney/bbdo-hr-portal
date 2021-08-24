@@ -1,13 +1,13 @@
 <div class="awards">
   <div class="container h-100">
     <div class="row">
-      <div class="col-md-12 awards__details">
+      <div class="col-md-12 details">
         <!-- Awards Header + Description -->
         <div class="row align-items-center">
-          <div class="col-sm-12 col-md-4 awards__details__header">
+          <div class="col-sm-12 col-md-4 details__header">
             {{header}}<br>{{header1}}
           </div>
-          <div class="col-sm-12 col-md-8 px-4 awards__details__description">
+          <div class="col-sm-12 col-md-8 px-4 details__description">
             {{description}}
           </div>
         </div>
@@ -19,7 +19,7 @@
           <!-- Awards Cards -->
           <ng-container *ngFor="let award of awards">
             <div class="card mb-3">
-              <div class="card-body">
+              <div class="card card-body h-100 justify-content-center">
                 <div class="card-body-inner">
                   <div class="col-12 awards-icon mb-2">
                     <img src="./assets/images/{{ award.icon }}.svg" alt="{{award.source}}">

@@ -12,7 +12,7 @@ AWARDS
     min-height: 150px;
   }
 
-  &__details {
+  .details {
     text-align: center;
 
     &__header {
@@ -66,7 +66,7 @@ AWARDS
 // iPhone 6/7/8/x/11 pro
 @media (min-width: 375px) {
   .awards {
-    &__details {
+    .details {
       &__header {
         font-size: 42px;
       }
@@ -127,7 +127,7 @@ AWARDS
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .awards {
-    &__details {
+    .details {
       text-align: left;
 
       &__header {
@@ -153,7 +153,7 @@ AWARDS
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .awards {
-    &__details {
+    .details {
       &__header {
         font-size: 46px;
       }
@@ -178,7 +178,7 @@ AWARDS
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .awards {
-    &__details {
+    .details {
       &__header {
         font-size: 52px;
         line-height: 48px;
@@ -200,7 +200,7 @@ AWARDS
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   .awards {
-    &__details {
+    .details {
       &__header {
         font-size: 54px;
         line-height: 44px;
@@ -237,7 +237,7 @@ AWARDS
 // XX-Large devices (larger desktops, 1660px and up)
 @media (min-width: 1660px) {
   .awards {
-    &__details {
+    .details {
       &__header {
         font-size: 56px;
         line-height: 46px;
