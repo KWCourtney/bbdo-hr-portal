@@ -7,7 +7,8 @@ import { DataService } from './../../data.service';
   styleUrls: ['./awards.component.scss']
 })
 export class AwardsComponent implements OnInit {
-  header = 'Awards.';
+  header = 'Awards &.';
+  header1 = 'Awards.';
   description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorcat cupidatat non proident.';
 
   awards: { id: any; icon: any; name: any; source: any; year: any;}[] = [];

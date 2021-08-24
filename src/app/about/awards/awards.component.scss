@@ -1,11 +1,12 @@
-@import 'styles';
-
 /* ====================
 AWARDS
 ==================== */
 
+@import 'styles';
+
 .awards {
   height: 100%;
+  padding-top: 1.5rem;
 
   .row {
     min-height: 150px;
@@ -14,14 +15,15 @@ AWARDS
   &__details {
     text-align: center;
 
-
     &__header {
       font-size: 40px;
       font-family: $futura-pt;
       font-weight: 800;
       font-style: normal;
-      line-height: 56px;
+      line-height: 36px;
+      letter-spacing: -1px;
       text-transform: lowercase;
+      margin-bottom: 1rem;
     }
 
     &__description {
@@ -30,6 +32,7 @@ AWARDS
       font-weight: 600;
       font-style: normal;
       line-height: 18px;
+      color: $bbdo-hr-base-text-90p;
     }
   }
 
@@ -39,7 +42,6 @@ AWARDS
     font-style: normal;
     margin-left: 1rem;
     margin-right: 1rem;
-    //border: 4px dotted blue;
 
     .awards-name {
       font-size: 20px;
@@ -47,13 +49,14 @@ AWARDS
     }
 
     .awards-source {
-      font-size: 14px;
-      line-height: 19px;
-      color: $bbdo-hr-base-text-90p;
+      font-size: 15px;
+      line-height: 15px;
+      color: $bbdo-hr-base-text-85p;
+      margin-bottom: .1rem;
     }
 
     .awards-year {
-      font-size: 11px;
+      font-size: 12px;
       line-height: 19px;
       color: $bbdo-hr-base-text-70p;
     }
@@ -76,19 +79,6 @@ AWARDS
     .card-body-inner {
       .awards-name {
         font-size: 21px;
-        line-height: 19px;
-      }
-
-      .awards-source {
-        font-size: 14px;
-        line-height: 19px;
-        color: $bbdo-hr-base-text-90p;
-      }
-
-      .awards-year {
-        font-size: 11px;
-        line-height: 19px;
-        color: $bbdo-hr-base-text-70p;
       }
     }
   }
@@ -106,17 +96,24 @@ AWARDS
     and (device-height: 844px)
     and (-webkit-device-pixel-ratio: 3) { }
 
-  @media only screen
-    and (device-width: 428px)
-    and (device-height: 926px)
-    and (-webkit-device-pixel-ratio: 3) { }
-
-
 // Pixel 2
-@media (min-width: 411px) {}
+@media (min-width: 411px) {
+  .awards {
+    .card-body-inner {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+  }
+}
 
 // iPhone 6/7/8/11/pro Max Plus
 @media (min-width: 414px) {}
+
+// iPhone 12 Pro Max
+@media only screen
+  and (device-width: 428px)
+  and (device-height: 926px)
+  and (-webkit-device-pixel-ratio: 3) { }
 
 // iPad // Portrait and Landscape
 @media only screen
@@ -129,67 +126,125 @@ AWARDS
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-
-
-
   .awards {
     &__details {
       text-align: left;
 
       &__header {
-        font-size: 70px;
-        font-weight: 800;
-        font-style: normal;
-        line-height: 56px;
-        text-transform: lowercase;
-      }
-
-      &__description {
-        font-size: 16px;
-        font-weight: 600;
-        font-style: normal;
-        line-height: 24px;
+        line-height: 40px;
       }
     }
 
     .card-body-inner {
-      font-family: $poppins;
-      font-weight: 600;
-      font-style: normal;
-      margin-left: 1rem;
-      margin-right: 1rem;
-      //border: 4px dotted blue;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+
+      .awards-icon {
+        margin-bottom: .75rem !important;
+      }
 
       .awards-name {
-        font-size: 20px;
-        line-height: 19px;
-      }
-
-      .awards-source {
-        font-size: 14px;
-        line-height: 19px;
-        color: $bbdo-hr-base-text-90p;
-      }
-
-      .awards-year {
-        font-size: 11px;
-        line-height: 19px;
-        color: $bbdo-hr-base-text-70p;
+        font-size: 18px;
+        line-height: 18px;
       }
     }
   }
 }
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .awards {
+    &__details {
+      &__header {
+        font-size: 46px;
+      }
+
+      &__description {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .card-body-inner {
+      margin-left: .75rem;
+      margin-right: .75rem;
+
+      .awards-icon {
+        margin-bottom: .5rem !important;
+      }
+    }
+  }
+}
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .awards {
+    &__details {
+      &__header {
+        font-size: 52px;
+        line-height: 48px;
+      }
+
+      &__description {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    .card-body-inner {
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+    }
+  }
+}
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+  .awards {
+    &__details {
+      &__header {
+        font-size: 54px;
+        line-height: 44px;
+      }
+    }
+
+    .card-body-inner {
+      margin-left: 1.75rem;
+      margin-right: 1.75rem;
+
+      .awards-icon {
+        margin-bottom: .75rem !important;
+      }
+
+      .awards-name {
+        font-size: 22px;
+        line-height: 22px;
+      }
+
+      .awards-source {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: .25rem;
+      }
+
+      .awards-year {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+}
 
 // XX-Large devices (larger desktops, 1660px and up)
-@media (min-width: 1660px) {}
+@media (min-width: 1660px) {
+  .awards {
+    &__details {
+      &__header {
+        font-size: 56px;
+        line-height: 46px;
+      }
+    }
+  }
+}
 
 // XX-Large devices (larger desktops, 1920px and up)
 @media (min-width: 1920px) {}

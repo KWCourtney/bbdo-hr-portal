@@ -1,5 +1,8 @@
+/* ====================
+CARDS
+==================== */
+
 .custom-cards {
-  padding-top: 2rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 10px;
@@ -7,6 +10,7 @@
   justify-items: center;
   align-content: space-evenly;
   align-items: center;
+  padding-top: 2rem;
 
   .card {
     min-width: 250px;
@@ -35,7 +39,10 @@
     and (-webkit-device-pixel-ratio: 3) {}
 
 // iPhone 12 + 12 Pro
-@media (min-width: 390px) {}
+@media only screen
+    and (device-width: 390px)
+    and (device-height: 844px)
+    and (-webkit-device-pixel-ratio: 3) { }
 
 // Pixel 2
 @media (min-width: 411px) {
@@ -51,6 +58,12 @@
 // iPhone 6/7/8/11/pro Max Plus
 @media (min-width: 414px) {}
 
+// iPhone 12 Pro Max
+@media only screen
+  and (device-width: 428px)
+  and (device-height: 926px)
+  and (-webkit-device-pixel-ratio: 3) { }
+
 // iPad // Portrait and Landscape
 @media only screen
   and (min-device-width: 768px)
@@ -63,8 +76,7 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .custom-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 
     .card {
@@ -76,32 +88,27 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .custom-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .custom-cards {
+
     .card {
       min-width: 250px;
       width: 250px;
       height: 250px;
     }
   }
+
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-  .custom-cards {
-    .card {
-      min-width: 275px;
-      width: 275px;
-      height: 275px;
-    }
-  }
-}
-
-// XX-Large devices (larger desktops, 1660px and up)
-@media (min-width: 1660px) {
   .custom-cards {
     .card {
       min-width: 300px;
@@ -110,6 +117,9 @@
     }
   }
 }
+
+// XX-Large devices (larger desktops, 1660px and up)
+@media (min-width: 1660px) {}
 
 // XX-Large devices (larger desktops, 1920px and up)
 @media (min-width: 1920px) {}
