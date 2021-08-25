@@ -1,1 +1,46 @@
-<p>resources works!</p>
+<div class="resources">
+  <div class="container h-100">
+    <div class="row">
+      <div class="col-md-12 details">
+        <!-- Resources Header + Description -->
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-4 details__header">
+            {{header}}<br>{{header1}}
+          </div>
+          <div class="col-sm-12 col-md-8 px-4 details__description">
+            {{description}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 custom-cards">
+          <!-- Resources Cards -->
+          <ng-container *ngFor="let resource of resources">
+            <div class="card mb-3">
+              <div class="card card-body h-100 justify-content-center">
+                <div class="card-body-inner">
+                  <div class="col-12 resources-icon mb-2">
+                    <img src="./assets/images/{{ resource.icon }}.svg" alt="{{resource.name}}">
+                  </div>
+                  <div class="col-12 resources-name mb-1">
+                    {{ resource.name }}
+                  </div>
+                  <div class="col-12 resources-text mb-2">
+                    {{ resource.text }}
+                  </div>
+                  <div class="col-12 resources-link">
+                    <a href="{{ resource.link }}">
+                      <img src="./../../assets/images/benefits-icon.svg" alt="{{resource.name}} external link">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+

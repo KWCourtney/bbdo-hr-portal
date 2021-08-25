@@ -119,12 +119,66 @@ var DataService = /** @class */ (function () {
                 link: "cc"
             },
         ];
+        this.resources = [
+            {
+                id: 1,
+                icon: "resources-bbdo-rooms",
+                name: "BBDO Rooms",
+                text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+                link: "cc"
+            },
+            {
+                id: 2,
+                icon: "resources-concur-solutions",
+                name: "Concur Solutions",
+                text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+                link: "cc"
+            },
+            {
+                id: 3,
+                icon: "resources-corrigo",
+                name: "Corrigo",
+                text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+                link: "cc"
+            },
+            {
+                id: 4,
+                icon: "resources-holiday-schedule",
+                name: "Holiday Schedule",
+                text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+                link: "cc"
+            },
+            {
+                id: 5,
+                icon: "resources-id-tags",
+                name: "ID Tags",
+                text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+                link: "cc"
+            },
+            {
+                id: 6,
+                icon: "resources-paige",
+                name: "Paige",
+                text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+                link: "cc"
+            },
+            {
+                id: 7,
+                icon: "resources-wifi",
+                name: "Wifi",
+                text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
+                link: "cc"
+            },
+        ];
     }
     DataService.prototype.getAwards = function () {
         return this.awards;
     };
     DataService.prototype.getBenefits = function () {
         return this.benefits;
+    };
+    DataService.prototype.getResources = function () {
+        return this.resources;
     };
     DataService = __decorate([
         core_1.Injectable({
