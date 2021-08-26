@@ -170,6 +170,88 @@ export class DataService {
     },
   ];
 
+  people = [
+    {
+      id: 1,
+      number: "01",
+      align: "align-left",
+      color: "bbdo-hr-grey-01-text",
+      text01: "we",
+      text02: "not me ",
+      text03: "oriented.",
+      icon: "people-single-quote",
+    },
+    {
+      id: 2,
+      number: "02",
+      align: "align-right",
+      color: "bbdo-hr-white-text",
+      text01: "hand",
+      text02: "raiser",
+      text03: "check!",
+      icon: "people-single-quote",
+    },
+    {
+      id: 3,
+      number: "03",
+      align: "align-left",
+      color: "bbdo-hr-white-text",
+      text01: "does",
+      text02: " the right",
+      text03: "thing.",
+      icon: "people-single-quote",
+    },
+    {
+      id: 4,
+      number: "04",
+      align: "align-left",
+      color: "bbdo-hr-blue-03-text",
+      text01: "clients",
+      text02: "love",
+      text03: "them.",
+      icon: "people-single-quote",
+    },
+    {
+      id: 5,
+      number: "05",
+      align: "align-left",
+      color: "bbdo-hr-white-text",
+      text01: "radiator",
+      text02: "not a",
+      text03: "drain.",
+      icon: "people-single-quote",
+    },
+    {
+      id: 6,
+      number: "06",
+      align: "align-left",
+      color: "bbdo-hr-blue-02-text",
+      text01: "makes",
+      text02: "the work",
+      text03: "better.",
+      icon: "people-single-quote",
+    },
+    {
+      id: 7,
+      number: "07",
+      align: "align-right",
+      color: "bbdo-hr-white-text",
+      text01: "always",
+      text02: "bounces",
+      text03: "back.",
+      icon: "people-single-quote",
+    },
+    {
+      id: 8,
+      number: "08",
+      align: "align-left",
+      color: "bbdo-hr-white-text",
+      text01: "has",
+      text02: "healthy",
+      text03: "paranoia.",
+      icon: "people-single-quote",
+    },
+  ];
 
   public getAwards():Array<{id: any, icon: any, name: any, source: any, year: any,}>{
     return this.awards;
@@ -181,6 +263,10 @@ export class DataService {
 
   public getResources():Array<{id: any, icon: any, name: any, text: any, link: any,}>{
     return this.resources;
+  }
+
+  public getPeople():Array<{id: any, number: any, align: any, color: any, text01: any, text02: any, text03: any, icon: any,}>{
+    return this.people;
   }
 
   // public createContact(contact: {id: any, name: any, description: any, email: any}){

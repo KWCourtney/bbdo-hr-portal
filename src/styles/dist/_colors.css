@@ -1,6 +1,34 @@
 /* ====================
 COLORS
 ==================== */
-.bbdo-hr-blue-01 {
-  background-color: #1458E4 !important;
+.bbdo-hr-blue-01-background {
+  background-color: #1458E4;
+}
+
+.bbdo-hr-blue-01-text {
+  color: #1458E4;
+}
+
+.bbdo-hr-blue-02-text {
+  color: #1F3C88;
+}
+
+.bbdo-hr-blue-03-text {
+  color: #124FC9;
+}
+
+.bbdo-hr-white-background {
+  background-color: #ffffff;
+}
+
+.bbdo-hr-white-text {
+  color: #ffffff;
+}
+
+.bbdo-hr-grey-01-background {
+  background-color: #6F7B91;
+}
+
+.bbdo-hr-grey-01-text {
+  color: #6F7B91;
 }

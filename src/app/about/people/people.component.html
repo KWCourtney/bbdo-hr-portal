@@ -1,1 +1,51 @@
-<p>people works!</p>
+<div class="people">
+  <div class="container h-100">
+    <div class="row">
+      <div class="col-md-12 details">
+        <!-- People Header + Description -->
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-4 details__header">
+            {{header}}
+          </div>
+          <div class="col-sm-12 col-md-8 px-4 details__description">
+            {{description}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 custom-cards">
+          <!-- People Cards -->
+          <ng-container *ngFor="let people of people">
+            <div class="card mb-3">
+              <div class="card card-body h-100 justify-content-center">
+                <!-- Card Body With Icon Background -->
+                <div class="card-body-inner h-100 {{people.color}}" id="people-{{people.id}}">
+                  <!-- Number -->
+                  <div class="col-12 people-number  {{people.align}}">
+                    {{people.number}}
+                  </div>
+                  <!-- Text -->
+                  <section>
+                    <div class="col-12 people-text01">
+                      {{ people.text01 }}
+                    </div>
+                    <div class="col-12 people-text02">
+                      {{ people.text02 }}
+                    </div>
+                    <div class="col-12 people-text03">
+                      {{ people.text03 }}
+                    </div>
+                  </section>
+                  <!-- Icon -->
+                  <div class="people-icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

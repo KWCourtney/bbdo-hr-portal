@@ -1,0 +1,716 @@
+/* ====================
+BENEFITS & PAYROLL
+==================== */
+
+@import 'styles';
+
+.people {
+  height: 100%;
+  padding-top: 1.5rem;
+
+  .row {
+    min-height: 150px;
+  }
+
+  .details {
+    text-align: center;
+
+    &__header {
+      font-size: 40px;
+      font-family: $futura-pt;
+      font-weight: 800;
+      font-style: normal;
+      line-height: 36px;
+      letter-spacing: -1px;
+      text-transform: lowercase;
+      margin-bottom: 1rem;
+    }
+
+    &__description {
+      font-size: 12px;
+      font-family: $poppins;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 18px;
+      color: $bbdo-hr-base-text-90p;
+    }
+  }
+
+  .card-body {
+    padding: 0;
+
+    .card-body-inner {
+      text-align: left;
+      border-radius: 20px;
+      padding: 2.5rem 1.25rem 2rem 1.25rem;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+
+      .people-icon {
+        top: 20px;
+        position: absolute;
+      }
+
+      &#people-1 {
+        .people-icon {
+          top: 10px;
+          right: 10px;
+          width: 96px;
+          height: 146px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 114.967 175.445'%3E%3Cpath id='Path_4966' data-name='Path 4966' d='M208.284,130.582h0a57.446,57.446,0,1,0-51.839,32.768v60.478c.451-.809,51.45-92.432,51.839-93.245Z' transform='translate(-98.963 -48.383)' fill='%236f7b91' opacity='0.86'/%3E%3C/svg%3E ");
+        }
+      }
+
+      &#people-2 {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cpath id='Rectangle_1772' data-name='Rectangle 1772' d='M20,0H280a20,20,0,0,1,20,20V150A150,150,0,0,1,150,300H20A20,20,0,0,1,0,280V20A20,20,0,0,1,20,0Z' fill='%236f7b91'/%3E%3C/svg%3E%0A");
+
+        .people-icon {
+          left: 20px;
+          width: 60px;
+          height: 43px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 77.29 55.796'%3E%3Cg id='Group_36165' data-name='Group 36165' transform='translate(-1339.056 -299.496)' opacity='0.1'%3E%3Cpath id='Path_1994' data-name='Path 1994' d='M107.256,62.774a58.553,58.553,0,0,0,5.815,17.335,1.582,1.582,0,0,1-2.157,2.143c-16.174-9.426-23.265-23.173-24.146-34.2-.76-9.509,5.727-19.305,15.558-21.088a18.088,18.088,0,1,1,4.929,35.806Z' transform='translate(1292.691 272.821)'/%3E%3Cpath id='Path_1995' data-name='Path 1995' d='M128.284,62.774A58.608,58.608,0,0,0,134.1,80.109a1.582,1.582,0,0,1-2.157,2.143c-16.174-9.426-23.265-23.173-24.146-34.2-.76-9.509,5.727-19.305,15.558-21.088a18.088,18.088,0,1,1,4.929,35.806Z' transform='translate(1231.319 272.821)'/%3E%3C/g%3E%3C/svg%3E ");
+        }
+      }
+
+      &#people-3 {
+        background-color: $bbd0-hr-blue-secondary;
+
+        .people-icon {
+          right: 10px;
+          width: 46px;
+          height: 205px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60.61 269.8'%3E%3Cg id='Group_36166' data-name='Group 36166' transform='translate(-1216.377 -265.451)'%3E%3Cpath id='Path_3160' data-name='Path 3160' d='M530.166,98.381a30.3,30.3,0,1,1,30.305-30.305A30.339,30.339,0,0,1,530.166,98.381Zm0-54.767A24.462,24.462,0,1,0,554.63,68.076,24.49,24.49,0,0,0,530.166,43.615Z' transform='translate(716.516 227.678)' fill='%23fff'/%3E%3Cpath id='Path_3161' data-name='Path 3161' d='M530.166,134.192a30.305,30.305,0,1,1,30.305-30.307A30.34,30.34,0,0,1,530.166,134.192Zm0-54.769a24.463,24.463,0,1,0,24.463,24.461A24.491,24.491,0,0,0,530.166,79.424Z' transform='translate(716.516 261.598)' fill='%23fff'/%3E%3Cpath id='Path_3162' data-name='Path 3162' d='M530.166,170A30.305,30.305,0,1,1,560.471,139.7,30.341,30.341,0,0,1,530.166,170Zm0-54.769A24.463,24.463,0,1,0,554.63,139.7,24.491,24.491,0,0,0,530.166,115.234Z' transform='translate(716.516 295.519)' fill='%23fff'/%3E%3Cpath id='Path_3163' data-name='Path 3163' d='M530.166,205.811a30.305,30.305,0,1,1,30.305-30.3A30.339,30.339,0,0,1,530.166,205.811Zm0-54.769a24.463,24.463,0,1,0,24.463,24.465A24.492,24.492,0,0,0,530.166,151.043Z' transform='translate(716.516 329.44)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+        }
+      }
+
+      &#people-4 {
+        .people-icon {
+          top: 10px;
+          right: 10px;
+          width: 96px;
+          height: 146px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 114.967 175.445'%3E%3Cpath id='Path_3454' data-name='Path 3454' d='M208.284,130.582h0a57.446,57.446,0,1,0-51.839,32.768v60.478c.451-.809,51.45-92.432,51.839-93.245Z' transform='translate(-98.963 -48.383)' fill='%23124fc9' opacity='0.85'/%3E%3C/svg%3E ");
+        }
+      }
+
+
+      &#people-5 {
+        background-color: $bbd0-hr-blue-secondary;
+
+        .people-icon {
+          top: 10px;
+          right: 10px;
+          width: 96px;
+          height: 146px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 114.967 175.445'%3E%3Cpath id='Path_5236' data-name='Path 5236' d='M208.284,130.582h0a57.446,57.446,0,1,0-51.839,32.768v60.478c.451-.809,51.45-92.432,51.839-93.245Z' transform='translate(-98.963 -48.383)' opacity='0.2'/%3E%3C/svg%3E ");
+        }
+      }
+
+      &#people-6 {
+        .people-icon {
+          right: 10px;
+          width: 46px;
+          height: 205px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60.61 271.61'%3E%3Cg id='Group_36260' data-name='Group 36260' transform='translate(-868.577 -627)'%3E%3Cpath id='Path_3160' data-name='Path 3160' d='M530.166,98.381a30.3,30.3,0,1,1,30.305-30.305A30.339,30.339,0,0,1,530.166,98.381Zm0-54.767A24.462,24.462,0,1,0,554.63,68.076,24.49,24.49,0,0,0,530.166,43.615Z' transform='translate(368.716 589.227)' fill='%231f3c88' opacity='0.3'/%3E%3Cpath id='Path_3161' data-name='Path 3161' d='M530.166,134.192a30.305,30.305,0,1,1,30.305-30.307A30.34,30.34,0,0,1,530.166,134.192Zm0-54.769a24.463,24.463,0,1,0,24.463,24.461A24.491,24.491,0,0,0,530.166,79.424Z' transform='translate(368.716 624.418)' fill='%231f3c88' opacity='0.3'/%3E%3Cpath id='Path_3162' data-name='Path 3162' d='M530.166,170A30.305,30.305,0,1,1,560.471,139.7,30.341,30.341,0,0,1,530.166,170Zm0-54.769A24.463,24.463,0,1,0,554.63,139.7,24.491,24.491,0,0,0,530.166,115.234Z' transform='translate(368.716 658.608)' fill='%231f3c88' opacity='0.3'/%3E%3Cpath id='Path_3163' data-name='Path 3163' d='M530.166,205.811a30.305,30.305,0,1,1,30.305-30.3A30.339,30.339,0,0,1,530.166,205.811Zm0-54.769a24.463,24.463,0,1,0,24.463,24.465A24.492,24.492,0,0,0,530.166,151.043Z' transform='translate(368.716 692.799)' fill='%231f3c88' opacity='0.3'/%3E%3C/g%3E%3C/svg%3E ");
+        }
+      }
+
+      &#people-7 {
+        background-color: $bbdo-hr-grey-01;
+
+        .people-icon {
+          left: 20px;
+          width: 59px;
+          height: 43px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 77.291 55.796'%3E%3Cg id='Group_36261' data-name='Group 36261' transform='translate(-1000.056 -631.496)'%3E%3Cpath id='Path_1994' data-name='Path 1994' d='M107.256,62.774a58.553,58.553,0,0,0,5.815,17.335,1.582,1.582,0,0,1-2.157,2.143c-16.174-9.426-23.265-23.173-24.146-34.2-.76-9.509,5.727-19.305,15.558-21.088a18.088,18.088,0,1,1,4.929,35.806Z' transform='translate(953.692 604.821)' fill='%23fff'/%3E%3Cpath id='Path_1995' data-name='Path 1995' d='M128.284,62.774A58.608,58.608,0,0,0,134.1,80.109a1.582,1.582,0,0,1-2.157,2.143c-16.174-9.426-23.265-23.173-24.146-34.2-.76-9.509,5.727-19.305,15.558-21.088a18.088,18.088,0,1,1,4.929,35.806Z' transform='translate(892.319 604.821)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E ");
+        }
+      }
+
+      &#people-8 {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cpath id='Rectangle_1775' data-name='Rectangle 1775' d='M20,0H280a20,20,0,0,1,20,20V150A150,150,0,0,1,150,300H20A20,20,0,0,1,0,280V20A20,20,0,0,1,20,0Z' fill='%23124fc9'/%3E%3C/svg%3E%0A");
+
+        .people-icon {
+          right: 20px;
+          width: 59px;
+          height: 43px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 77.29 55.796'%3E%3Cg id='Group_36262' data-name='Group 36262' transform='translate(-1522.162 -628.162)'%3E%3Cpath id='Path_1994' data-name='Path 1994' d='M103.106,62.774a58.553,58.553,0,0,1-5.815,17.335,1.582,1.582,0,0,0,2.157,2.143c16.174-9.426,23.265-23.173,24.146-34.2.76-9.509-5.727-19.305-15.558-21.088a18.088,18.088,0,1,0-4.929,35.806Z' transform='translate(1435.454 601.488)' fill='%23fff'/%3E%3Cpath id='Path_1995' data-name='Path 1995' d='M124.134,62.774a58.609,58.609,0,0,1-5.815,17.335,1.582,1.582,0,0,0,2.157,2.143c16.174-9.426,23.265-23.173,24.146-34.2.76-9.509-5.727-19.305-15.558-21.088a18.088,18.088,0,1,0-4.929,35.806Z' transform='translate(1454.771 601.488)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E ");
+        }
+      }
+
+      .people-number {
+        font-family: $futura-pt;
+        font-style: normal;
+        font-size: 53px;
+        font-weight: 800;
+        line-height: 29px;
+        letter-spacing: -3px;
+
+        &.align-left {
+          text-align: left;
+        }
+
+        &.align-right {
+          text-align: right;
+        }
+      }
+
+      section {
+        line-height: 36px;
+
+        .people-text01,
+        .people-text02,
+        .people-text03 {
+          font-size: 43px;
+          letter-spacing: -1px;
+          font-family: $futura-pt-bold;
+          font-style: normal;
+          font-weight: 700;
+        }
+      }
+
+      .people-text01 {
+        opacity: 70%;
+      }
+
+      .people-text02 {
+        opacity: 85%;
+      }
+    }
+  }
+}
+
+// iPhone 6/7/8/x/11 pro
+@media (min-width: 375px) {
+  .people {
+    .details {
+      &__header {
+        font-size: 42px;
+      }
+
+      &__description {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+// iPhone 11 Pro
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3) {}
+
+// iPhone 12 + 12 Pro
+@media only screen
+    and (device-width: 390px)
+    and (device-height: 844px)
+    and (-webkit-device-pixel-ratio: 3) { }
+
+// Pixel 2
+@media (min-width: 411px) {
+  .people {
+    .card-body {
+      .card-body-inner {
+        padding: 3rem 1.25rem 2.5rem 1.25rem;
+
+        &#people-1 {
+          .people-icon {
+            width: 115px;
+            height: 175px;
+          }
+        }
+
+        &#people-2 {
+          .people-icon {
+            width: 77px;
+            height: 56px;
+          }
+        }
+
+        &#people-3 {
+          .people-icon {
+            top: 20px;
+            width: 56px;
+            height: 249px;
+          }
+        }
+
+        &#people-4 {
+          .people-icon {
+            width: 115px;
+            height: 175px;
+          }
+        }
+
+        &#people-5 {
+          .people-icon {
+            width: 115px;
+            height: 175px;
+          }
+        }
+
+        &#people-6 {
+          .people-icon {
+            top: 20px;
+            width: 56px;
+            height: 249px;
+          }
+        }
+
+        &#people-7 {
+          .people-icon {
+            width: 77px;
+            height: 56px;
+          }
+        }
+
+        &#people-8 {
+          .people-icon {
+            width: 77px;
+            height: 55px;
+          }
+        }
+
+        .people-number {
+          font-size: 56px;
+          font-weight: 800;
+          line-height: 29px;
+          letter-spacing: -3px;
+        }
+
+        section {
+          line-height: 40px;
+
+          .people-text01,
+          .people-text02,
+          .people-text03 {
+            font-size: 46px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPhone 6/7/8/11/pro Max Plus
+@media (min-width: 414px) {}
+
+// iPhone 12 Pro Max
+@media only screen
+  and (device-width: 428px)
+  and (device-height: 926px)
+  and (-webkit-device-pixel-ratio: 3) {
+
+
+  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// iPad // Portrait and Landscape
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .people {
+    .row {
+      min-height: 100px;
+    }
+
+    .details {
+      text-align: left;
+
+      &__header {
+        line-height: 40px;
+      }
+    }
+
+    .card-body {
+      .card-body-inner {
+        padding: 2.5rem 1.25rem 2rem 1.25rem;
+        justify-content: space-between;
+
+        .people-icon {
+          top: 20px;
+        }
+
+        &#people-1 {
+          .people-icon {
+            width: 86px;
+            height: 131px;
+          }
+        }
+
+        &#people-2 {
+          .people-icon {
+            width: 60px;
+            height: 43px;
+          }
+        }
+
+        &#people-3 {
+          .people-icon {
+            top: 20px;
+            width: 42px;
+            height: 187px;
+          }
+        }
+
+        &#people-4 {
+          .people-icon {
+            width: 86px;
+            height: 131px;
+          }
+        }
+
+        &#people-5 {
+          .people-icon {
+            width: 86px;
+            height: 131px;
+          }
+        }
+
+        &#people-6 {
+          .people-icon {
+            top: 20px;
+            width: 42px;
+            height: 187px;
+          }
+        }
+
+        &#people-7 {
+          .people-icon {
+            width: 59px;
+            height: 43px;
+          }
+        }
+
+        &#people-8 {
+          .people-icon {
+            width: 59px;
+            height: 43px;
+          }
+        }
+
+        .people-number {
+          font-size: 53px;
+        }
+
+        section {
+          line-height: 32px;
+
+          .people-text01,
+          .people-text02,
+          .people-text03 {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .people {
+    .details {
+      &__header {
+        font-size: 46px;
+      }
+
+      &__description {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .card-body {
+      .card-body-inner {
+        &#people-1 {
+          .people-icon {
+          right: 20px;
+          width: 70px;
+          height: 107px;
+          }
+        }
+
+        &#people-2 {
+          .people-icon {
+            width: 60px;
+            height: 43px;
+          }
+        }
+
+        &#people-3 {
+          .people-icon {
+            top: 20px;
+            width: 42px;
+            height: 187px;
+          }
+        }
+
+        &#people-4 {
+          .people-icon {
+            top: 10px;
+            right: 10px;
+            width: 70px;
+            height: 107px;
+          }
+        }
+
+        &#people-5 {
+          .people-icon {
+            top: 10px;
+            right: 10px;
+            width: 70px;
+            height: 107px;
+          }
+        }
+
+        &#people-6 {
+          .people-icon {
+            top: 20px;
+            width: 42px;
+            height: 187px;
+          }
+        }
+
+        &#people-7 {
+          .people-icon {
+            width: 59px;
+            height: 43px;
+          }
+        }
+
+        &#people-8 {
+          .people-icon {
+            width: 59px;
+            height: 43px;
+          }
+        }
+
+        .people-number {
+          font-size: 53px;
+        }
+
+        section {
+          line-height: 32px;
+
+          .people-text01,
+          .people-text02,
+          .people-text03 {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .people {
+    .details {
+      &__header {
+        font-size: 52px;
+        line-height: 48px;
+      }
+
+      &__description {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    .card-body {
+      .card-body-inner {
+        &#people-1 {
+          .people-icon {
+            top: 20px;
+            right: 20px;
+            width: 96px;
+            height: 146px;
+          }
+        }
+
+        &#people-2 {
+          .people-icon {
+            width: 60px;
+            height: 43px;
+          }
+        }
+
+        &#people-3 {
+          .people-icon {
+            width: 46px;
+            height: 205px;
+          }
+        }
+
+        &#people-4 {
+          .people-icon {
+            top: 20px;
+            right: 20px;
+            width: 96px;
+            height: 146px;
+          }
+        }
+
+        &#people-5 {
+          .people-icon {
+            top: 20px;
+            right: 20px;
+            width: 96px;
+            height: 146px;
+          }
+        }
+
+        &#people-6 {
+          .people-icon {
+            top: 20px;
+            width: 46px;
+            height: 205px;
+          }
+        }
+
+        &#people-7 {
+          .people-icon {
+            width: 59px;
+            height: 43px;
+          }
+        }
+
+        &#people-8 {
+          .people-icon {
+            width: 59px;
+            height: 43px;
+          }
+        }
+
+        .people-number {
+          font-size: 53px;
+        }
+
+        section {
+          line-height: 36px;
+
+          .people-text01,
+          .people-text02,
+          .people-text03 {
+            font-size: 43px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .people {
+    .details {
+      &__header {
+        font-size: 54px;
+        line-height: 44px;
+      }
+    }
+
+    .card-body {
+      .card-body-inner {
+        &#people-1 {
+          .people-icon {
+            width: 115px;
+            height: 175px;
+          }
+        }
+
+        &#people-2 {
+          .people-icon {
+            width: 77px;
+            height: 56px;
+          }
+        }
+
+        &#people-3 {
+          .people-icon {
+            width: 46px;
+            height: 205px;
+          }
+        }
+
+        &#people-4 {
+          .people-icon {
+            width: 115px;
+            height: 175px;
+          }
+        }
+
+        &#people-5 {
+          .people-icon {
+            width: 115px;
+            height: 175px;
+          }
+        }
+
+        &#people-6 {
+          .people-icon {
+            top: 20px;
+            width: 46px;
+            height: 205px;
+          }
+        }
+
+        &#people-7 {
+          .people-icon {
+            width: 77px;
+            height: 56px;
+          }
+        }
+
+        &#people-8 {
+          .people-icon {
+            width: 77px;
+            height: 56px;
+          }
+        }
+
+        .people-number {
+          font-size: 56px;
+          font-weight: 800;
+          line-height: 29px;
+          letter-spacing: -3px;
+        }
+
+        section {
+          line-height: 40px;
+
+          .people-text01,
+          .people-text02,
+          .people-text03 {
+            font-size: 46px;
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+// XX-Large devices (larger desktops, 1660px and up)
+@media (min-width: 1660px) {
+  .people {
+    .details {
+      &__header {
+        font-size: 56px;
+        line-height: 46px;
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {}

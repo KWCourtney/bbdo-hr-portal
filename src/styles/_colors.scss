@@ -4,12 +4,45 @@ COLORS
 
 $bbdo-hr-background: #F9F9F9 !important;
 $bbdo-hr-blue-primary: #1458E4;
+$bbd0-hr-blue-secondary: #1F3C88;
+$bbdo-hr-blue-tertiary: #124FC9;
 $bbdo-hr-white: #ffffff;
 $bbdo-hr-base-text: rgb(35, 32, 32);
 $bbdo-hr-base-text-90p: rgb(35, 32, 32, .9);
 $bbdo-hr-base-text-85p: rgb(35, 32, 32, .85);
 $bbdo-hr-base-text-70p: rgb(35, 32, 32, .7);
+$bbdo-hr-grey-01: #6F7B91;
 
-.bbdo-hr-blue-01 {
-  background-color: $bbdo-hr-blue-primary !important;
+.bbdo-hr-blue-01-background {
+  background-color: $bbdo-hr-blue-primary;
 }
+
+.bbdo-hr-blue-01-text {
+  color: $bbdo-hr-blue-primary;
+}
+
+.bbdo-hr-blue-02-text {
+  color: $bbd0-hr-blue-secondary;
+}
+
+.bbdo-hr-blue-03-text {
+  color: $bbdo-hr-blue-tertiary;
+}
+
+.bbdo-hr-white-background {
+  background-color: $bbdo-hr-white;
+}
+
+.bbdo-hr-white-text {
+  color: $bbdo-hr-white;
+}
+
+.bbdo-hr-grey-01-background {
+  background-color: $bbdo-hr-grey-01;
+}
+
+.bbdo-hr-grey-01-text {
+  color: $bbdo-hr-grey-01;
+}
+
+
