@@ -1,1 +1,25 @@
-<p>contact works!</p>
+<div class="contact-us">
+  <div class="container h-100">
+    <div class="row">
+      <div class="col-md-12 details">
+        <!-- Contact Header + Description -->
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-4 details__header">
+            {{header}}<br>{{header1}}
+          </div>
+          <div class="col-sm-12 col-md-8 px-4 details__description">
+            {{description}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <!-- Contact Tabs + Cards -->
+        <section>
+          <app-tabs [tabs]="tabs"></app-tabs>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

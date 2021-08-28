@@ -253,6 +253,42 @@ export class DataService {
     },
   ];
 
+  // contacts = [
+  //   {
+  //     id: 1,
+  //     city: "Atl",
+  //     icon: "contacts-kevin",
+  //     name: "Kevin Booth",
+  //     title: "Manager of Training",
+  //     duty01: "Paychecks",
+  //     duty02: "Benefits",
+  //     duty03: "Medical Leaves",
+  //     phone: '404-841-1608',
+  //   },
+  //   {
+  //     id: 2,
+  //     city: "NYC",
+  //     icon: "contacts-kevin",
+  //     name: "Saif James",
+  //     title: "Manager of Training",
+  //     duty01: "Paychecks",
+  //     duty02: "Benefits",
+  //     duty03: "Medical Leaves",
+  //     phone: '404-841-1608',
+  //   },
+  //   {
+  //     id: 3,
+  //     city: "SF",
+  //     icon: "contacts-kevin",
+  //     name: "Liberty Barnes",
+  //     title: "Manager of Training",
+  //     duty01: "Paychecks",
+  //     duty02: "Benefits",
+  //     duty03: "Medical Leaves",
+  //     phone: '404-841-1608',
+  //   },
+  // ];
+
   public getAwards():Array<{id: any, icon: any, name: any, source: any, year: any,}>{
     return this.awards;
   }
@@ -268,6 +304,10 @@ export class DataService {
   public getPeople():Array<{id: any, number: any, align: any, color: any, text01: any, text02: any, text03: any, icon: any,}>{
     return this.people;
   }
+
+  // public getContacts():Array<{id: any, city: any, icon: any, name: any, title: any, duty01: any, duty02: any, duty03: any, phone: any,}>{
+  //   return this.contacts;
+  // }
 
   // public createContact(contact: {id: any, name: any, description: any, email: any}){
   //   this.contacts.push(contact);

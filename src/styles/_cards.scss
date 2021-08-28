@@ -20,6 +20,11 @@ CARDS
     box-shadow: 0px 2px 13px #00000014;
     text-align: center;
     border: none;
+
+    &.contacts-details {
+      height: 200px;
+      text-align: left;
+    }
   }
 }
 

@@ -12,9 +12,10 @@ $bbdo-hr-base-text-90p: rgb(35, 32, 32, .9);
 $bbdo-hr-base-text-85p: rgb(35, 32, 32, .85);
 $bbdo-hr-base-text-70p: rgb(35, 32, 32, .7);
 $bbdo-hr-grey-01: #6F7B91;
+$bbdo-hr-grey-02: #eeeeee;
 
 .bbdo-hr-blue-01-background {
-  background-color: $bbdo-hr-blue-primary;
+  background-color: $bbdo-hr-blue-primary !important;
 }
 
 .bbdo-hr-blue-01-text {

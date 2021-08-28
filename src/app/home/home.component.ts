@@ -8,11 +8,11 @@ import { Component, OnDestroy, Renderer2 } from '@angular/core';
 export class HomeComponent implements OnDestroy {
 
   constructor(private renderer: Renderer2) {
-    this.renderer.addClass(document.body, 'bbdo-hr-blue-01');
+    this.renderer.addClass(document.body, 'bbdo-hr-blue-01-background');
    }
 
   ngOnDestroy() {
-    this.renderer.removeClass(document.body, 'bbdo-hr-blue-01');
+    this.renderer.removeClass(document.body, 'bbdo-hr-blue-01-background');
   }
 
   ngOnInit(): void {
