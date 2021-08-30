@@ -1,0 +1,328 @@
+/* ====================
+TABS
+==================== */
+
+.tabs {
+  // Tabs
+  .tab-group {
+    height: 46px;
+    width: 270px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 13px #00000014;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: $bbdo-hr-white;
+    line-height: 1.8;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+
+    .tab {
+      width: 90px;
+      display: inline-block;
+      height: 46px;
+      line-height: 2.8;
+
+      &.active {
+        background-color: $bbdo-hr-blue-secondary;
+        color: $bbdo-hr-white;
+      }
+
+      &:first-of-type {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+      }
+
+      &:nth-of-type(2) {
+        border-left: 1px solid $bbdo-hr-grey-02;
+        border-right: 1px solid $bbdo-hr-grey-02;
+      }
+
+      &:last-of-type {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+    }
+  }
+
+  // Tab Content
+  .tab-content-group {
+    width: 100%;
+
+    .tab-content {
+      .contact-us-details {
+
+        &__icon-person {
+          img {
+            width: 52px;
+          }
+        }
+
+        &__name {
+          font-size: 18px;
+          font-weight: 600;
+          text-align: left;
+
+          img {
+            width: 24px;
+            float: right;
+          }
+        }
+
+        &__title {
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 500;
+          color: $bbdo-hr-base-text-85p;
+          text-align: left;
+        }
+
+        &__phone {
+          font-size: 13px;
+          line-height: 20px;
+          color: $bbdo-hr-base-text-70p;
+          text-align: left;
+        }
+
+        &__duties {
+          font-size: 15px;
+          line-height: 26px;
+          text-align: left;
+          padding-left: .75rem;
+
+          > img {
+            width: 20px;
+            margin-right: .5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPhone 6/7/8/x/11 pro
+@media (min-width: 375px) {
+  .tabs {
+    // Tab Content
+    .tab-content-group {
+      .tab-content {
+        .contact-us-details {
+          &__icon-person {
+            img {
+              width: 65px;
+            }
+          }
+
+          &__name {
+            font-size: 20px;
+
+            img {
+              width: 30px;
+              float: right;
+            }
+          }
+
+          &__title {
+            font-size: 15px;
+          }
+
+          &__phone {
+            font-size: 14px;
+          }
+
+          &__duties {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: left;
+
+            > img {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPhone 11 Pro
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3) {}
+
+// iPhone 12 + 12 Pro
+@media only screen
+    and (device-width: 390px)
+    and (device-height: 844px)
+    and (-webkit-device-pixel-ratio: 3) { }
+
+// Pixel 2
+@media (min-width: 411px) { }
+
+// iPhone 6/7/8/11/pro Max Plus
+@media (min-width: 414px) {}
+
+// iPhone 12 Pro Max
+@media only screen
+  and (device-width: 428px)
+  and (device-height: 926px)
+  and (-webkit-device-pixel-ratio: 3) { }
+
+// iPad // Portrait and Landscape
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) { }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .tabs {
+    // Tabs
+    .tab-group {
+      margin-top: 0;
+    }
+
+     // Tab Content
+     .tab-content-group {
+      .tab-content {
+        .contact-us-details {
+          &__icon-person {
+            img {
+              width: 65px;
+            }
+          }
+
+          &__name {
+            font-size: 20px;
+
+            img {
+              width: 30px;
+              float: right;
+            }
+          }
+
+          &__title {
+            font-size: 15px;
+          }
+
+          &__phone {
+            font-size: 14px;
+          }
+
+          &__duties {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: left;
+
+            > img {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .tabs {
+     // Tab Content
+     .tab-content-group {
+      .tab-content {
+        .contact-us-details {
+          &__icon-person {
+            img {
+              width: 90px;
+            }
+          }
+
+          &__name {
+            font-size: 24px;
+
+            img {
+              width: 34px;
+            }
+          }
+
+          &__title {
+            font-size: 18px;
+            line-height: 24px;
+          }
+
+          &__phone {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          &__duties {
+            font-size: 18px;
+            line-height: 32px;
+
+            > img {
+              width: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+  .tabs {
+    // Tab Content
+    .tab-content-group {
+      .tab-content {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+
+        .contact-us-details {
+          &__icon-person {
+            img {
+              width: 100px;
+            }
+          }
+
+          &__name {
+            img {
+              width: 32px;
+            }
+          }
+
+          &__title {
+            font-size: 20px;
+            line-height: 28px;
+          }
+
+          &__phone {
+            font-size: 18px;
+          }
+
+          &__duties {
+            font-size: 20px;
+            line-height: 34px;
+
+          }
+        }
+      }
+    }
+ }
+}
+
+// XX-Large devices (larger desktops, 1660px and up)
+@media (min-width: 1660px) {}
+
+// XX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {}
+

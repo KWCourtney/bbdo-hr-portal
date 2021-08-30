@@ -21,15 +21,25 @@ CARDS
     text-align: center;
     border: none;
 
-    &.contacts-details {
+    &.contact-us-details {
+      width: 275px;
       height: 200px;
-      text-align: left;
+      text-align: left !important;
     }
   }
 }
 
 // iPhone 6/7/8/x/11 pro
-@media (min-width: 375px) {}
+@media (min-width: 375px) {
+  .custom-cards {
+    .card {
+      &.contact-us-details {
+        width: 300px;
+        height: 225px;
+      }
+    }
+  }
+}
 
 // iPhone 11 Pro
 @media only screen
@@ -78,6 +88,10 @@ CARDS
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 
+    &.contact-us-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .card {
       min-width: 225px;
       width: 225px;
@@ -90,17 +104,25 @@ CARDS
 @media (min-width: 992px) {
   .custom-cards {
     grid-template-columns: repeat(4, 1fr);
+
+    &.contact-us-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .custom-cards {
-
     .card {
       min-width: 250px;
       width: 250px;
       height: 250px;
+
+      &.contact-us-details {
+        width: 350px;
+        height: 275px;
+      }
     }
   }
 
@@ -113,6 +135,11 @@ CARDS
       min-width: 300px;
       width: 300px;
       height: 300px;
+
+      &.contact-us-details {
+        width: 375px;
+        height: 300px;
+      }
     }
   }
 }
