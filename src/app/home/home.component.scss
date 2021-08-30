@@ -189,12 +189,14 @@
     .container-fluid {
       .row {
         .home__svg {
+          margin-right: -100px;
           svg {
             transform: scale(1);
           }
         }
 
         .home__text {
+          margin-right: -100px;
           .home__text__welcome {
             font-size: 66px;
           }

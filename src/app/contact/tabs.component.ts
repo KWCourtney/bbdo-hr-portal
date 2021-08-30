@@ -26,7 +26,7 @@ import { Tab } from './tab';
 
                       <div class="row m-0">
                         <!-- Person Icon + Email Icon -->
-                        <div class="col-3 col-md-4 contact-us-details__icon-person p-0">
+                        <div class="col-3 col-md-4 contact-us-details__icon-person p-0 text-center">
                           <img src="./assets/images/{{ items.icon }}.svg" alt="{{items.name}} icon">
                         </div>
 
