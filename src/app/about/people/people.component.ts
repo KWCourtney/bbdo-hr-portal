@@ -21,9 +21,4 @@ export class PeopleComponent implements OnInit {
   ngOnInit() {
     this.people = this.dataService.getPeople();
   }
-
-  // public selectAward(award: any){
-  //   this.selectedAward = award;
-  // }
-
 }

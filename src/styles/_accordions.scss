@@ -1,0 +1,180 @@
+/* ====================
+ACCORDIONS
+==================== */
+.custom-accordion {
+  .accordion {
+    width: 100%;
+    margin: auto;
+    background-color: $bbdo-hr-white;
+    margin-top: 2rem;
+
+    .accordion-inner {
+      margin-bottom: 15px;
+      box-shadow: 0px 2px 13px #00000014;
+
+      &.active {
+        .menu {
+
+          i {
+            &.fa-chevron-down {
+              transform: rotate(180deg);
+            }
+          }
+        }
+
+        .submenu {
+          border-top: 1px solid $bbdo-hr-grey-02;
+          height: 135px;
+          max-height: 135px;
+        }
+      }
+    }
+
+    .menu {
+      transition: all 0.4s ease;
+      color: $bbdo-hr-blue-tertiary;
+      font-size: 14px;
+      font-weight: 800;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+
+      section {
+        width: 95%;
+
+        .accordion-icon {
+          top: 1rem;
+          right: 1rem;
+          position: absolute;
+
+          i {
+            transition: all 0.4s ease;
+            color: $bbdo-hr-blue-tertiary;
+
+            &.fa-chevron-down {
+              right: 1rem;
+              left: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .submenu {
+      height: 0;
+      overflow: hidden;
+      font-size: 14px;
+      transition: height 0.4s ease;
+      line-height: 17px;
+    }
+  }
+}
+
+// iPhone 6/7/8/x/11 pro
+@media (min-width: 375px) {}
+
+// iPhone 11 Pro
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3) {}
+
+// iPhone 12 + 12 Pro
+@media only screen
+    and (device-width: 390px)
+    and (device-height: 844px)
+    and (-webkit-device-pixel-ratio: 3) { }
+
+// Pixel 2
+@media (min-width: 411px) {
+  .custom-accordion {
+    .accordion {
+      .accordion-inner {
+        &.active {
+          .submenu {
+            height: 145px;
+            max-height: 145px;
+          }
+        }
+      }
+
+      .menu {
+        font-size: 15px;
+      }
+
+      .submenu {
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+// iPhone 6/7/8/11/pro Max Plus
+@media (min-width: 414px) {}
+
+// iPhone 12 Pro Max
+@media only screen
+  and (device-width: 428px) {}
+
+// iPad // Portrait and Landscape
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) { }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .custom-accordion {
+    .accordion {
+      .accordion-inner {
+        &.active {
+          .submenu {
+            height: 115px;
+            max-height: 115px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .custom-accordion {
+    .accordion {
+      margin-top: 0;
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
+
+// XX-Large devices (larger desktops, 1660px and up)
+@media (min-width: 1660px) {
+  .custom-accordion {
+    .accordion {
+      .menu {
+        padding-top: 1.2rem !important;
+        padding-bottom: 1.2rem !important;
+
+        section {
+          .accordion-icon {
+            top: 1.2rem;
+            right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {}

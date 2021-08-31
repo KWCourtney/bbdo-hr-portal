@@ -25,7 +25,7 @@ nav {
         letter-spacing: -1px;
         line-height: 48px;
         color: $bbdo-hr-white !important;
-        font-weight: 600;
+        font-weight: 700;
         margin-right: 2.1rem;
       }
     }
@@ -149,30 +149,27 @@ nav {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   nav {
-
-
-      .nav-custom {
-        a {
-          &.navbar-brand {
-            margin-right: 0;
-          }
+    .nav-custom {
+      a {
+        &.navbar-brand {
+          margin-right: 0;
         }
+      }
 
-        .navbar-nav {
-          margin-bottom: 0 !important;
+      .navbar-nav {
+        margin-bottom: 0 !important;
 
-          .nav-item {
-            a {
-              &.nav-link {
-              color: $bbdo-hr-white !important;
-              font-size: 16px;
-              margin-right: 0px;
-              }
+        .nav-item {
+          a {
+            &.nav-link {
+            color: $bbdo-hr-white !important;
+            font-size: 16px;
+            margin-right: 0px;
             }
           }
         }
       }
-
+    }
   }
 }
 

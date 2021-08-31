@@ -1,0 +1,27 @@
+<!-- Accordion Component -->
+<div id="accordion" class="accordion">
+  <div *ngFor="let menu of menus; let i = index" [class.active]="menu.active" class="accordion-inner">
+    <!-- Header -->
+    <div class="menu p-3" (click)="toggle(i)">
+      <section>
+        {{ menu.name }}
+
+        <div class="accordion-icon">
+          <i class="fa fa-chevron-down"></i>
+        </div>
+      </section>
+    </div>
+
+    <!-- Body -->
+    <div class="submenu" #submenu [style.height.px]="menu.active ? submenu.scrollHeight : 0">
+      <div *ngFor="let submenu of menu.submenu" class="py-2 px-3">
+        <div class="col-12 py-2">
+          {{ submenu.text1 }}
+        </div>
+        <div class="col-12 py-2">
+          {{ submenu.text2 }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -72,14 +72,14 @@ export class DataService {
       icon: "benefits-education-benefit",
       name: "Education Benefit",
       text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
-      link: "cc",
+      link: "education",
     },
     {
       id: 3,
       icon: "benefits-employee-stock",
       name: "Employee Stock",
       text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
-      link: "cc",
+      link: "employee-stock",
     },
     {
       id: 4,
@@ -100,7 +100,7 @@ export class DataService {
       icon: "benefits-new-parent",
       name: "New Parent",
       text: "Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ",
-      link: "cc",
+      link: "new-parent",
     },
     {
       id: 7,

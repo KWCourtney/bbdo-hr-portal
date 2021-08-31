@@ -10,7 +10,7 @@ BENEFITS & PAYROLL
 
   .details {
     text-align: center;
-    height: 150px;
+    min-height: 150px;
 
     &__header {
       font-size: 40px;
@@ -143,9 +143,7 @@ BENEFITS & PAYROLL
 
 // iPhone 12 Pro Max
 @media only screen
-  and (device-width: 428px)
-  and (device-height: 926px)
-  and (-webkit-device-pixel-ratio: 3) { }
+  and (device-width: 428px) { }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { }
