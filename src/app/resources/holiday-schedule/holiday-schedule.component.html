@@ -1,1 +1,50 @@
-<p>holiday-schedule works!</p>
+<div class="holidays">
+  <div class="container h-100">
+    <div class="row">
+      <div class="col-md-12 details">
+        <!-- Holidays Header + Description -->
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-4 details__header">
+            {{header}}<br>{{header1}}
+          </div>
+          <div class="col-sm-12 col-md-8 px-4 details__description">
+            {{description}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 custom-cards holidays-cards">
+          <!-- Holidays Cards -->
+          <ng-container *ngFor="let holiday of holidays">
+            <div class="card mb-4 holidays-details">
+              <div class="card-body h-100 justify-content-center">
+                <div class="card-body-inner mt-auto h-100 p-2">
+
+                  <div class="col-12 holidays-name">
+                    {{ holiday.name }}
+                  </div>
+
+                  <div class="col-12 holidays-icon">
+                    <img src="./assets/images/holidays-line.svg" alt="Line Icon">
+                  </div>
+
+                  <div class="col-12 holidays-day">
+                    {{ holiday.day }}
+                  </div>
+
+                  <div class="col-12 holidays-date">
+                    {{ holiday.date }}
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+
+

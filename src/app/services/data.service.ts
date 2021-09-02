@@ -118,55 +118,119 @@ export class DataService {
     },
   ];
 
+  holidays         = [
+    {
+      id: 1,
+      name: 'New Year\'s Day',
+      day: 'Wednesday',
+      date: 'January 01',
+    },
+    {
+      id: 2,
+      name: 'MLK Jr Day',
+      day: 'Monday',
+      date: 'January 20',
+    },
+    {
+      id: 3,
+      name: 'President\'s Day',
+      day: 'Monday',
+      date: 'February 02',
+    },
+    {
+      id: 4,
+      name: 'Good Friday',
+      day: 'Friday',
+      date: 'April 10',
+    },
+    {
+      id: 5,
+      name: 'Memorial Day',
+      day: 'Monday',
+      date: 'May 25',
+    },
+    {
+      id: 6,
+      name: 'Independence Day',
+      day: 'Wednesday',
+      date: 'July 04',
+    },
+    {
+      id: 7,
+      name: 'Labor Day',
+      day: 'Monday',
+      date: 'September 05',
+    },
+    {
+      id: 8,
+      name: 'Thanksgiving',
+      day: 'Thursday + Friday',
+      date: 'November 24 + 25',
+    },
+    {
+      id: 9,
+      name: 'Holiday Break',
+      day: 'Wednesday - Friday',
+      date: 'December 24 -31',
+    },
+  ];
+
   resources = [
     {
       id: 1,
       icon: 'resources-bbdo-rooms',
       name: 'BBDO Rooms',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: '#',
+      routerLink: '',
     },
     {
       id: 2,
       icon: 'resources-concur-solutions',
       name: 'Concur Solutions',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: '#',
+      routerLink: '',
     },
     {
       id: 3,
       icon: 'resources-corrigo',
       name: 'Corrigo',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: '#',
+      routerLink: '',
     },
     {
       id: 4,
       icon: 'resources-holiday-schedule',
       name: 'Holiday Schedule',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: '#',
+      routerLink: 'holiday-schedule',
     },
     {
       id: 5,
       icon: 'resources-id-tags',
       name: 'ID Tags',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: '#',
+      routerLink: '',
     },
     {
       id: 6,
       icon: 'resources-paige',
       name: 'Paige',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: '#',
+      routerLink: '',
     },
     {
       id: 7,
       icon: 'resources-wifi',
       name: 'Wifi',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: '#',
+      routerLink: 'wifi',
     },
   ];
 
@@ -319,10 +383,6 @@ export class DataService {
     },
   ];
 
-  public getWifi():Array<{id: any, icon: any, city: any, network: any, networkText: any, password: any, passwordText: any,}>{
-    return this.wifi;
-  }
-
   public getAwards():Array<{id: any, icon: any, name: any, source: any, year: any,}>{
     return this.awards;
   }
@@ -331,12 +391,19 @@ export class DataService {
     return this.benefits;
   }
 
+  public getHolidays():Array<{id: any, name: any, day: any, date: any,}>{
+    return this.holidays;
+  }
+
   public getPeople():Array<{id: any, number: any, align: any, color: any, text01: any, text02: any, text03: any, icon: any,}>{
     return this.people;
   }
 
-  public getResources():Array<{id: any, icon: any, name: any, text: any, link: any,}>{
+  public getResources():Array<{id: any, icon: any, name: any, text: any, link: any, routerLink: any,}>{
     return this.resources;
   }
 
+  public getWifi():Array<{id: any, icon: any, city: any, network: any, networkText: any, password: any, passwordText: any,}>{
+    return this.wifi;
+  }
 }

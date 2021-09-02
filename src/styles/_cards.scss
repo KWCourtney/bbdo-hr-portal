@@ -26,16 +26,27 @@ CARDS
       height: 200px;
       text-align: left !important;
     }
+
+    &.holidays-details {
+      width: 275px;
+      height: 150px;
+      text-align: left !important;
+    }
   }
 }
 
 // iPhone 6/7/8/x/11 pro
-@media (min-width: 375px) {
+@media only screen and (min-width: 375px) {
   .custom-cards {
     .card {
       &.contact-us-details {
         width: 300px;
         height: 225px;
+      }
+
+      &.holidays-details {
+        width: 300px;
+        height: 150px;
       }
     }
   }
@@ -48,37 +59,46 @@ CARDS
     and (-webkit-device-pixel-ratio: 3) {}
 
 // iPhone 12 + 12 Pro
-@media only screen
-    and (device-width: 390px)
-    and (device-height: 844px)
-    and (-webkit-device-pixel-ratio: 3) { }
+@media only screen and (min-width: 390px) {}
 
 // Pixel 2
-@media (min-width: 411px) {
+@media only screen and (min-width: 411px) {
   .custom-cards {
     .card {
       min-width: 300px;
       width: 300px;
       height: 300px;
+
+      &.holidays-details {
+        height: 150px;
+      }
     }
   }
 }
 
 // iPhone 6/7/8/11/pro Max Plus
-@media (min-width: 414px) {}
+@media only screen and (min-width: 414px) {}
 
 // iPhone 12 Pro Max
-@media only screen
-  and (device-width: 428px) { }
+@media only screen and (min-width: 428px) {
+  .custom-cards {
+    .card {
+      &.holidays-details {
+        width: 350px;
+        height: 175px;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
 
 // iPad // Portrait and Landscape
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) { }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+  and (-webkit-min-device-pixel-ratio: 1) {}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -90,10 +110,18 @@ CARDS
       grid-template-columns: repeat(2, 1fr);
     }
 
+    &.holidays-cards{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .card {
       min-width: 225px;
       width: 225px;
       height: 225px;
+
+      &.holidays-details {
+        width: 325px;
+      }
     }
   }
 }
@@ -105,6 +133,16 @@ CARDS
 
     &.contact-us-cards {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    &.holidays-cards{
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+      &.holidays-details {
+        width: 300px;
+      }
     }
   }
 }
@@ -121,9 +159,12 @@ CARDS
         width: 350px;
         height: 275px;
       }
+
+      &.holidays-details {
+        width: 350px;
+      }
     }
   }
-
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -137,6 +178,10 @@ CARDS
       &.contact-us-details {
         width: 375px;
         height: 300px;
+      }
+
+      &.holidays-details {
+        width: 385px;
       }
     }
   }
