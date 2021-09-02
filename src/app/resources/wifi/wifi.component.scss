@@ -1,0 +1,319 @@
+/* ====================
+WIFI
+==================== */
+
+@import 'styles';
+
+.wifi {
+  height: 100%;
+  padding-top: 1.5rem;
+
+  .details {
+    text-align: center;
+    min-height: 150px;
+
+    &__header {
+      font-size: 40px;
+      font-family: $futura-pt;
+      font-weight: 800;
+      font-style: normal;
+      line-height: 36px;
+      letter-spacing: -1px;
+      text-transform: lowercase;
+      margin-bottom: 1rem;
+    }
+
+    &__description {
+      font-size: 12px;
+      font-family: $poppins;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 18px;
+      color: $bbdo-hr-base-text-90p;
+    }
+  }
+
+  .card-body-inner {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    padding-right: .75rem;
+    padding-left: .75rem;
+
+    .wifi-icon {
+      img {
+        height: 130px;
+      }
+    }
+
+    .wifi-city {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .wifi-network,
+    .wifi-password {
+      font-size: 16px;
+      line-height: 20px;
+      color: $bbdo-hr-base-text-85p;
+    }
+
+    .wifi-network-text,
+    .wifi-password-text {
+      font-size: 12px;
+      line-height: 14px;
+      color: $bbdo-hr-base-text-70p;
+      font-weight: 400;
+    }
+  }
+}
+
+// iPhone 6/7/8/x/11 pro
+@media only screen and (min-width: 375px) {
+  .wifi {
+    .details {
+      &__header {
+        font-size: 42px;
+      }
+
+      &__description {
+        font-size: 12px;
+      }
+    }
+
+    .card-body-inner {
+      .wifi-city {
+        font-size: 21px;
+      }
+
+      .wifi-network-text,
+      .wifi-password-text {
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+
+// iPhone 11 Pro
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3) {}
+
+// iPhone 12 + 12 Pro
+@media only screen and (min-width: 390px) { }
+
+// Pixel 2
+@media only screen and (min-width: 411px) {
+  .wifi {
+    .card-body-inner {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+
+      .wifi-icon {
+        margin-bottom: .5rem !important;
+
+        img {
+          height: 150px;
+        }
+      }
+
+      .wifi-city {
+        font-size: 24px;
+      }
+
+      .wifi-network,
+      .wifi-password {
+        font-size: 17px;
+        line-height: 21px;
+      }
+
+      .wifi-network-text,
+      .wifi-password-text {
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+
+// iPhone 6/7/8/11/pro Max Plus
+@media only screen and (min-width: 414px) {}
+
+// iPhone 12 Pro Max
+@media only screen and (device-width: 428px) { }
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) { }
+
+// iPad // Portrait and Landscape
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .wifi {
+    .details {
+      text-align: left;
+
+      &__header {
+        line-height: 40px;
+      }
+    }
+
+    .card-body-inner {
+      padding-right: 0rem;
+      padding-left: 0rem;
+
+      .wifi-icon {
+        margin-bottom: .5rem !important;
+
+        img {
+          height: 110px;
+        }
+      }
+
+      .wifi-city {
+        font-size: 20px;
+        line-height: 22px;
+      }
+
+      .wifi-network,
+      .wifi-password {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .wifi-network-text,
+      .wifi-password-text {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .wifi {
+    .details {
+      &__header {
+        font-size: 46px;
+      }
+
+      &__description {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .card-body-inner {
+      padding-left: .5rem;
+      padding-right: .5rem;
+
+      .wifi-icon {
+        margin-bottom: .25rem !important;
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .wifi {
+    .details {
+      &__header {
+        font-size: 52px;
+        line-height: 48px;
+      }
+
+      &__description {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    .card-body-inner {
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      .wifi-icon {
+        margin-bottom: .25rem !important;
+
+        img {
+          height: 120px;
+        }
+      }
+
+      .wifi-city {
+        font-size: 23px;
+        line-height: 27px;
+      }
+
+      .wifi-network,
+      .wifi-password {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      .wifi-network-text,
+      .wifi-password-text {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .wifi {
+    .details {
+      &__header {
+        font-size: 54px;
+        line-height: 44px;
+      }
+    }
+
+    .card-body-inner {
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+
+      .wifi-icon {
+        margin-bottom: .5rem !important;
+
+        img {
+          height: 140px;
+        }
+      }
+
+      .wifi-city {
+        font-size: 23px;
+        line-height: 29px;
+      }
+
+      .wifi-network,
+      .wifi-password {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1660px and up)
+@media (min-width: 1660px) {
+  .wifi {
+    .details {
+      &__header {
+        font-size: 56px;
+        line-height: 46px;
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {}

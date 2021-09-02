@@ -1,1 +1,50 @@
-<p>wifi works!</p>
+<div class="wifi">
+  <div class="container h-100">
+    <div class="row">
+      <div class="col-md-12 details">
+        <!-- Benefits + Payroll Header + Description -->
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-4 details__header">
+            {{header}}<br>{{header1}}
+          </div>
+          <div class="col-sm-12 col-md-8 px-4 details__description">
+            {{description}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 custom-cards">
+          <!-- Benefits + Payroll Cards -->
+          <ng-container *ngFor="let wifi of wifi">
+            <div class="card mb-3">
+              <div class="card card-body h-100 justify-content-center">
+                <div class="card-body-inner">
+                  <div class="col-12 wifi-icon">
+                    <img src="./assets/images/{{ wifi.icon }}.svg" alt="{{wifi.city}}">
+                  </div>
+                  <div class="col-12 wifi-city">
+                    {{ wifi.city }}
+                  </div>
+                  <div class="col-12 wifi-network">
+                    {{ wifi.network }}
+                  </div>
+                  <div class="col-12 wifi-network-text">
+                    {{ wifi.networkText }}
+                  </div>
+                  <div class="col-12 wifi-password">
+                    {{ wifi.password }}
+                  </div>
+                  <div class="col-12 wifi-password-text">
+                    {{ wifi.passwordText }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+

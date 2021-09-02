@@ -20,9 +20,4 @@ export class BenefitsPayrollComponent implements OnInit {
   ngOnInit() {
     this.benefits = this.dataService.getBenefits();
   }
-
-  // public selectAward(award: any){
-  //   this.selectedAward = award;
-  // }
-
 }
