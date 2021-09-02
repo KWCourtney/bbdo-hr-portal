@@ -10,7 +10,7 @@ ACCORDIONS
 
     .accordion-inner {
       margin-bottom: 15px;
-      box-shadow: 0px 2px 13px #00000014;
+      @include box-shadow;
 
       &.active {
         .menu {

@@ -60,17 +60,26 @@ a {
 // iPhone 6/7/8/x/11 pro
 @media (min-width: 375px) {}
 
-///// iPhone 11 Pro
+// iPhone 11 Pro
 @media only screen
     and (device-width: 375px)
     and (device-height: 812px)
-    and (-webkit-device-pixel-ratio: 3) { }
+    and (-webkit-device-pixel-ratio: 3) {}
+
+// iPhone 12 + 12 Pro
+@media only screen and (min-width: 390px) { }
 
 // Pixel 2
-@media (min-width: 411px) {}
+@media only screen and (min-width: 411px) {}
 
 // iPhone 6/7/8/11/pro Max Plus
-@media (min-width: 414px) {}
+@media only screen and (min-width: 414px) {}
+
+// iPhone 12 Pro Max
+@media only screen and (min-width: 428px) {}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
 
 // iPad // Portrait and Landscape
 @media only screen
@@ -78,12 +87,8 @@ a {
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) { }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { }
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
-
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {}
 
@@ -93,8 +98,8 @@ a {
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {}
 
-// XX-Large devices (larger desktops, 1680px and up)
-@media (min-width: 1680px) {}
+// XX-Large devices (larger desktops, 1660px and up)
+@media (min-width: 1660px) {}
 
 // XX-Large devices (larger desktops, 1920px and up)
 @media (min-width: 1920px) {}

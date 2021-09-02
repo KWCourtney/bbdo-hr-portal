@@ -15,6 +15,7 @@ export * from './resources/resources.component';
 export * from './resources/holiday-schedule/holiday-schedule.component';
 export * from './resources/wifi/wifi.component';
 
+export * from './ui/accordion/accordion.component';
+export * from './ui/accordion-item/accordion-item.component';
 export * from './ui/footer/footer.component';
 export * from './ui/header/header.component';
-

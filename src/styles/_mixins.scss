@@ -1,0 +1,7 @@
+/* ====================
+MIXINS
+==================== */
+
+@mixin box-shadow ($x-axis: 0, $y-axis: 2px, $blur: 13px, $color: $bbdo-hr-box-shadow) {
+  box-shadow: $x-axis $y-axis $blur $color;
+}
