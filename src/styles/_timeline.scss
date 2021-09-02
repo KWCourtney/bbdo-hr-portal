@@ -154,12 +154,10 @@ mgl-timeline {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   mgl-timeline {
-    border: 1px solid black;
 
     &.timeline-history {
       .mgl-timeline-line {
         left: 10%;
-        border: 1px dashed orange;
       }
       mgl-timeline-entry {
 
