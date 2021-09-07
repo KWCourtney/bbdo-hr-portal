@@ -6,7 +6,7 @@ import { filter } from 'rxjs/operators';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent  {
   navbarOpen: boolean = false;
 
   constructor(private router: Router) {}

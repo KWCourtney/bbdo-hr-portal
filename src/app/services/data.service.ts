@@ -65,7 +65,7 @@ export class DataService {
       icon: 'benefits-ADP',
       name: 'ADP',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: 'https://www.adp.com/',
     },
     {
       id: 2,
@@ -86,14 +86,14 @@ export class DataService {
       icon: 'benefits-fidelity',
       name: 'Fidelity',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: 'https://www.fidelity.com/',
     },
     {
       id: 5,
       icon: 'benefits-health-benefits',
       name: 'Health Benefits',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: 'https://www.bswift.com/',
     },
     {
       id: 6,
@@ -107,14 +107,14 @@ export class DataService {
       icon: 'benefits-oasys',
       name: 'OASYS',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: '#',
     },
     {
       id: 8,
       icon: 'benefits-reach',
       name: 'Reach',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'cc',
+      link: '#',
     },
   ];
 
@@ -181,56 +181,49 @@ export class DataService {
       icon: 'resources-bbdo-rooms',
       name: 'BBDO Rooms',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
-      routerLink: '',
+      link: '#'
     },
     {
       id: 2,
       icon: 'resources-concur-solutions',
       name: 'Concur Solutions',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
-      routerLink: '',
+      link: 'https://www.concursolutions.com/'
     },
     {
       id: 3,
       icon: 'resources-corrigo',
       name: 'Corrigo',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
-      routerLink: '',
+      link: '#https://www.jllt.com/corrigo-login/'
     },
     {
       id: 4,
       icon: 'resources-holiday-schedule',
       name: 'Holiday Schedule',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
-      routerLink: 'holiday-schedule',
+      link: 'holiday-schedule'
     },
     {
       id: 5,
       icon: 'resources-id-tags',
       name: 'ID Tags',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
-      routerLink: '',
+      link: '#'
     },
     {
       id: 6,
       icon: 'resources-paige',
       name: 'Paige',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
-      routerLink: '',
+      link: '#'
     },
     {
       id: 7,
       icon: 'resources-wifi',
       name: 'Wifi',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
-      routerLink: 'wifi',
+      link: 'wifi'
     },
   ];
 
@@ -399,7 +392,7 @@ export class DataService {
     return this.people;
   }
 
-  public getResources():Array<{id: any, icon: any, name: any, text: any, link: any, routerLink: any,}>{
+  public getResources():Array<{id: any, icon: any, name: any, text: any, link: any,}>{
     return this.resources;
   }
 

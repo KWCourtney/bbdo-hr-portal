@@ -41,6 +41,12 @@ body {
   flex: 0 0 50px;
 }
 
+.bbdo-hr-blue-01-background {
+  .bbdo-hr-footer-wrap {
+    color: $bbdo-hr-white;
+  }
+}
+
 a {
   &.nav-link  {
     &.dropdown-toggle {

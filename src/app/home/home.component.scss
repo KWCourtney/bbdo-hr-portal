@@ -117,32 +117,27 @@
   .home {
     .container-fluid {
       .row {
-        // flex-direction: row;
-
         .home__svg {
           svg {
-            transform: scale(1);
+            transform: scale(.7);
           }
         }
 
         .home__text {
-          padding-left: 0;
-          justify-content: center;
-
           .home__text__welcome {
-            font-size: 56px;
+            font-size: 66px;
           }
 
           .home__text__divider {
             svg {
-            transform: scale(.8);
+            transform: scale(.6);
             }
           }
 
           .home__text__description {
-            font-size: 20px;
             padding-left: 0;
             padding-right: 0;
+            font-size: 21px;
           }
         }
       }
@@ -164,6 +159,9 @@
         }
 
         .home__text {
+          padding-left: 0;
+          justify-content: center;
+
           .home__text__welcome {
             font-size: 56px;
           }
@@ -197,6 +195,7 @@
 
         .home__text {
           margin-right: -100px;
+
           .home__text__welcome {
             font-size: 66px;
           }

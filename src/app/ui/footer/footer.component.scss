@@ -1,10 +1,13 @@
 @import 'colors';
 
 :host {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  color: $bbdo-hr-white;
   font-size: 14px;
   letter-spacing: .35px;
   line-height: 25px;
+}
+
+.bbdo-hr-blue-01-background {
+  .col-12 {
+    border: 1px solid red;
+  }
 }
