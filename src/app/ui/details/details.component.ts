@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ConfigDetails, TextDetails } from './types';
 
 @Component({
   selector: 'app-details',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
+  @Input() options: ConfigDetails;
+  @Input() details: TextDetails[];
+  config:  ConfigDetails;
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.config = this.mergeConfig(this.options);
+  }
+
+  mergeConfig(options:  ConfigDetails) {
+    const config = {
+      multi: true
+    };
+
+    return { ...config, ...options };
   }
 
 }

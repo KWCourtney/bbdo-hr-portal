@@ -1,1 +1,13 @@
-<p>details works!</p>
+<div class="col-md-12 details">
+  <!-- Employee Stock Header + Description -->
+  <div class="row align-items-center">
+    <ng-container *ngFor="let detail of details">
+      <div class="col-sm-12 col-md-4 details__header">
+        {{detail.header}}<br>{{detail.header1}}
+      </div>
+      <div class="col-sm-12 col-md-8 px-4 details__description">
+        {{detail.description}}
+      </div>
+    </ng-container>
+  </div>
+</div>

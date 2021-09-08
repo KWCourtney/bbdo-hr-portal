@@ -20,7 +20,10 @@ export class EducationComponent  {
       iconClass: 'fa fa-code',
       active: true,
       submenu: [
-        { text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.', text2: 'See also: Lorem ipsum dolor sit amet' },
+        {
+          text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          text2: 'See also: Lorem ipsum dolor sit amet'
+        },
       ]
     },
     {
@@ -28,7 +31,10 @@ export class EducationComponent  {
       iconClass: 'fa fa-mobile',
       active: false,
       submenu: [
-        { text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.', text2: 'See also: Lorem ipsum dolor sit amet' },
+        {
+          text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          text2: 'See also: Lorem ipsum dolor sit amet'
+        },
       ]
     },
     {
@@ -36,7 +42,10 @@ export class EducationComponent  {
       iconClass: 'fa fa-globe',
       active: false,
       submenu: [
-        { text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.', text2: 'See also: Lorem ipsum dolor sit amet' },
+        {
+          text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          text2: 'See also: Lorem ipsum dolor sit amet'
+        },
       ]
     },
     {
@@ -44,7 +53,10 @@ export class EducationComponent  {
       iconClass: 'fa fa-globe',
       active: false,
       submenu: [
-        { text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.', text2: 'See also: Lorem ipsum dolor sit amet' },
+        {
+          text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          text2: 'See also: Lorem ipsum dolor sit amet'
+        },
       ]
     },
     {
@@ -52,7 +64,10 @@ export class EducationComponent  {
       iconClass: 'fa fa-globe',
       active: false,
       submenu: [
-        { text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.', text2: 'See also: Lorem ipsum dolor sit amet' },
+        {
+          text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          text2: 'See also: Lorem ipsum dolor sit amet'
+        },
       ]
     }
   ];

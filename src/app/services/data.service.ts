@@ -126,7 +126,7 @@ export class DataService {
     },
   ];
 
-  holidays         = [
+  holidays = [
     {
       id: 1,
       name: 'New Year\'s Day',
