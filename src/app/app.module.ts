@@ -12,6 +12,7 @@ import {AboutComponent, AccordionComponent, AccordionItemComponent, AwardsCompon
 
 // Service class
 import {AccordionService} from './services/accordion.service';
+import { DetailsComponent } from './ui/details/details.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import {AccordionService} from './services/accordion.service';
     ResourcesComponent,
     WifiComponent,
     TabsComponent,
-    AccordionComponent, AccordionItemComponent
+    AccordionComponent, AccordionItemComponent, DetailsComponent
   ],
   imports: [
     AppRoutingModule,

@@ -66,6 +66,7 @@ export class DataService {
       name: 'ADP',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
       link: 'https://www.adp.com/',
+      target: '_blank',
     },
     {
       id: 2,
@@ -73,6 +74,7 @@ export class DataService {
       name: 'Education Benefit',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
       link: 'education',
+      target: '_self',
     },
     {
       id: 3,
@@ -80,6 +82,7 @@ export class DataService {
       name: 'Employee Stock',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
       link: 'employee-stock',
+      target: '_self',
     },
     {
       id: 4,
@@ -87,6 +90,7 @@ export class DataService {
       name: 'Fidelity',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
       link: 'https://www.fidelity.com/',
+      target: '_blank',
     },
     {
       id: 5,
@@ -94,6 +98,7 @@ export class DataService {
       name: 'Health Benefits',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
       link: 'https://www.bswift.com/',
+      target: '_blank',
     },
     {
       id: 6,
@@ -101,6 +106,7 @@ export class DataService {
       name: 'New Parent',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
       link: 'new-parent',
+      target: '_self',
     },
     {
       id: 7,
@@ -108,6 +114,7 @@ export class DataService {
       name: 'OASYS',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
       link: '#',
+      target: '_self',
     },
     {
       id: 8,
@@ -115,6 +122,7 @@ export class DataService {
       name: 'Reach',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
       link: '#',
+      target: '_self',
     },
   ];
 
@@ -181,49 +189,56 @@ export class DataService {
       icon: 'resources-bbdo-rooms',
       name: 'BBDO Rooms',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#'
+      link: '#',
+      target: '_self',
     },
     {
       id: 2,
       icon: 'resources-concur-solutions',
       name: 'Concur Solutions',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'https://www.concursolutions.com/'
+      link: 'https://www.concursolutions.com/',
+      target: '_blank',
     },
     {
       id: 3,
       icon: 'resources-corrigo',
       name: 'Corrigo',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#https://www.jllt.com/corrigo-login/'
+      link: 'https://www.jllt.com/corrigo-login/',
+      target: '_blank',
     },
     {
       id: 4,
       icon: 'resources-holiday-schedule',
       name: 'Holiday Schedule',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'holiday-schedule'
+      link: 'holiday-schedule',
+      target: '_self',
     },
     {
       id: 5,
       icon: 'resources-id-tags',
       name: 'ID Tags',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#'
+      link: '#',
+      target: '_self',
     },
     {
       id: 6,
       icon: 'resources-paige',
       name: 'Paige',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#'
+      link: '#',
+      target: '_self',
     },
     {
       id: 7,
       icon: 'resources-wifi',
       name: 'Wifi',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: 'wifi'
+      link: 'wifi',
+      target: '_self',
     },
   ];
 
@@ -380,7 +395,7 @@ export class DataService {
     return this.awards;
   }
 
-  public getBenefits():Array<{id: any, icon: any, name: any, text: any, link: any,}>{
+  public getBenefits():Array<{id: any, icon: any, name: any, text: any, link: any, target: any,}>{
     return this.benefits;
   }
 
@@ -392,7 +407,7 @@ export class DataService {
     return this.people;
   }
 
-  public getResources():Array<{id: any, icon: any, name: any, text: any, link: any,}>{
+  public getResources():Array<{id: any, icon: any, name: any, text: any, link: any, target: any,}>{
     return this.resources;
   }
 

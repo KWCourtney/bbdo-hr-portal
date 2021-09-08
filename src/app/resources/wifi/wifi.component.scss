@@ -8,31 +8,6 @@ WIFI
   height: 100%;
   padding-top: 1.5rem;
 
-  .details {
-    text-align: center;
-    min-height: 150px;
-
-    &__header {
-      font-size: 40px;
-      font-family: $futura-pt;
-      font-weight: 800;
-      font-style: normal;
-      line-height: 36px;
-      letter-spacing: -1px;
-      text-transform: lowercase;
-      margin-bottom: 1rem;
-    }
-
-    &__description {
-      font-size: 12px;
-      font-family: $poppins;
-      font-weight: 600;
-      font-style: normal;
-      line-height: 18px;
-      color: $bbdo-hr-base-text-90p;
-    }
-  }
-
   .card-body-inner {
     font-family: $poppins;
     font-style: normal;
@@ -71,16 +46,6 @@ WIFI
 // iPhone 6/7/8/x/11 pro
 @media only screen and (min-width: 375px) {
   .wifi {
-    .details {
-      &__header {
-        font-size: 42px;
-      }
-
-      &__description {
-        font-size: 12px;
-      }
-    }
-
     .card-body-inner {
       .wifi-city {
         font-size: 21px;
@@ -156,14 +121,6 @@ WIFI
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .wifi {
-    .details {
-      text-align: left;
-
-      &__header {
-        line-height: 40px;
-      }
-    }
-
     .card-body-inner {
       padding-right: 0rem;
       padding-left: 0rem;
@@ -198,17 +155,6 @@ WIFI
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .wifi {
-    .details {
-      &__header {
-        font-size: 46px;
-      }
-
-      &__description {
-        font-size: 14px;
-        line-height: 20px;
-      }
-    }
-
     .card-body-inner {
       padding-left: .5rem;
       padding-right: .5rem;
@@ -223,18 +169,6 @@ WIFI
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .wifi {
-    .details {
-      &__header {
-        font-size: 52px;
-        line-height: 48px;
-      }
-
-      &__description {
-        font-size: 16px;
-        line-height: 22px;
-      }
-    }
-
     .card-body-inner {
       padding-left: 1rem;
       padding-right: 1rem;
@@ -270,13 +204,6 @@ WIFI
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   .wifi {
-    .details {
-      &__header {
-        font-size: 54px;
-        line-height: 44px;
-      }
-    }
-
     .card-body-inner {
       padding-left: 1.75rem;
       padding-right: 1.75rem;
@@ -304,16 +231,7 @@ WIFI
 }
 
 // XX-Large devices (larger desktops, 1660px and up)
-@media (min-width: 1660px) {
-  .wifi {
-    .details {
-      &__header {
-        font-size: 56px;
-        line-height: 46px;
-      }
-    }
-  }
-}
+@media (min-width: 1660px) {}
 
 // XX-Large devices (larger desktops, 1920px and up)
 @media (min-width: 1920px) {}

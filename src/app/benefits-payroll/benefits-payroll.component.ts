@@ -12,8 +12,7 @@ export class BenefitsPayrollComponent implements OnInit {
   header1 = 'Payroll.';
   description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorcat cupidatat non proident.';
 
-  benefits: {id: any; icon: any; name: any; text: any; link: any;}[] = [];
-  // selectedAward: any;
+  benefits: {id: any; icon: any; name: any; text: any; link: any; target: any;}[] = [];
 
   constructor(public dataService: DataService) { }
 

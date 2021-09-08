@@ -22,5 +22,5 @@ export class AccordionService {
   collapseAllEntries() {
     this.onEntryClick.emit();
   }
-  
+
 }
