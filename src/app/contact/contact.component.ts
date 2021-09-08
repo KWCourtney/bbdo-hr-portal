@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Tab } from './tab';
+import { TextDetails } from './../ui/details/types';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -7,9 +8,13 @@ import { Tab } from './tab';
 })
 export class ContactComponent {
 
-  header = 'Contact';
-  header1 = 'Us.';
-  description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorcat cupidatat non proident.';
+  details: TextDetails[] = [
+    {
+      header: 'contact',
+      header1: 'us.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorcat cupidatat non proident.'
+    }
+  ];
 
   tabs: Tab[] = [
     {

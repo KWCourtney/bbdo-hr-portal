@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { TextDetails } from './../../ui/details/types';
 @Component({
   selector: 'app-history',
   templateUrl: './history.component.html',
@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HistoryComponent {
 
-  header = 'history.';
-  header1 = '';
-  description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorcat cupidatat non proident.';
+  details: TextDetails[] = [
+    {
+      header: 'employee',
+      header1: 'stock.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorcat cupidatat non proident.'
+    }
+  ];
 
   // Timeline
   alternate: boolean = false;
