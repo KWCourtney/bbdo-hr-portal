@@ -101,7 +101,7 @@ TABS
 }
 
 // iPhone 6/7/8/x/11 pro
-@media (min-width: 375px) {
+@media only screen and (min-width: 375px) {
   .tabs {
     // Tab Content
     .tab-content-group {
@@ -153,29 +153,25 @@ TABS
     and (-webkit-device-pixel-ratio: 3) {}
 
 // iPhone 12 + 12 Pro
-@media only screen
-    and (device-width: 390px)
-    and (device-height: 844px)
-    and (-webkit-device-pixel-ratio: 3) { }
+@media only screen and (min-width: 390px) { }
 
 // Pixel 2
-@media (min-width: 411px) { }
+@media only screen and (min-width: 411px) { }
 
 // iPhone 6/7/8/11/pro Max Plus
-@media (min-width: 414px) {}
+@media only screen and (min-width: 414px) {}
 
 // iPhone 12 Pro Max
-@media only screen
-  and (device-width: 428px) { }
+@media only screen and (min-width: 428px) { }
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) { }
 
 // iPad // Portrait and Landscape
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) { }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -277,7 +273,6 @@ TABS
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-
   .tabs {
     // Tab Content
     .tab-content-group {
