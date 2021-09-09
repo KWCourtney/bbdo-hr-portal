@@ -14,7 +14,6 @@ TABS
     line-height: 1.8;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 2rem;
     @include box-shadow;
 
     .tab {
@@ -22,6 +21,7 @@ TABS
       display: inline-block;
       height: 46px;
       line-height: 2.8;
+      cursor: pointer;
 
       &.active {
         background-color: $bbdo-hr-blue-secondary;

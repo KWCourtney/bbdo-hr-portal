@@ -6,7 +6,7 @@ import { Tab } from './tab';
   template: `
     <div class="tabs">
       <!-- Tabs -->
-      <div class="tab-group mx-auto">
+      <div class="tab-group mx-auto mb-4">
         <span *ngFor="let tab of tabs; index as i" class="tab" [class.active]="tab.active" (click)="changeTab(i)">
             {{tab.title}}
         </span>

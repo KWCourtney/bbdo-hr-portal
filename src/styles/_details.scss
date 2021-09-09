@@ -73,7 +73,8 @@ DETAILS COMPONENT
     display: flex;
     text-align: left;
     min-height: 1px;
-    min-height: 110px !important;
+    min-height: 110px;
+    border: 1px solid lime;
 
     &__header {
       line-height: 40px;
