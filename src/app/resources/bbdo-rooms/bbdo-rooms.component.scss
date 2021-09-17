@@ -1,13 +1,13 @@
 /* ====================
-BENEFITS & PAYROLL
+BBDO ROOMS
 ==================== */
 
 @import 'styles';
 
-.new-parent {
+.bbdo-rooms {
   height: 100%;
 
-  .new-parent-background {
+  .bbdo-rooms-background {
     display: none;
   }
 }
@@ -47,8 +47,8 @@ BENEFITS & PAYROLL
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .new-parent {
-    .new-parent-background {
+  .bbdo-rooms {
+    .bbdo-rooms-background {
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -62,8 +62,8 @@ BENEFITS & PAYROLL
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .new-parent {
-    .new-parent-background {
+  .bbdo-rooms {
+    .bbdo-rooms-background {
       justify-content: flex-end;
     }
   }
@@ -71,8 +71,8 @@ BENEFITS & PAYROLL
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-  .new-parent {
-    .new-parent-background {
+  .bbdo-rooms {
+    .bbdo-rooms-background {
       justify-content: center;
 
       img {
@@ -84,8 +84,8 @@ BENEFITS & PAYROLL
 
 // XX-Large devices (larger desktops, 1660px and up)
 @media (min-width: 1660px) {
-  .new-parent {
-    .new-parent-background {
+  .bbdo-rooms {
+    .bbdo-rooms-background {
       justify-content: flex-end;
 
       img {
@@ -97,10 +97,10 @@ BENEFITS & PAYROLL
 
 // XX-Large devices (larger desktops, 1920px and up)
 @media (min-width: 1920px) {
-  .new-parent {
-    .new-parent-background {
+  .bbdo-rooms {
+    .bbdo-rooms-background {
       img {
-        width: 80%;
+        width: 85%;
       }
     }
   }

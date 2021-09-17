@@ -13,7 +13,8 @@
     </div>
 
     <!-- Body -->
-    <div class="submenu" #submenu [style.height.px]="menu.active ? submenu.scrollHeight : 0">
+    <!-- <div class="submenu" #submenu [style.height.px]="menu.active ? submenu.scrollHeight : 0"> -->
+    <div class="submenu" #submenu>
       <div *ngFor="let submenu of menu.submenu" class="py-2 px-3">
         <div class="col-12 py-2">
           {{ submenu.text1 }}

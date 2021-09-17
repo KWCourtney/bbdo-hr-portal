@@ -8,12 +8,10 @@ import { MglTimelineModule } from 'angular-mgl-timeline';
 import { NgModule } from '@angular/core';
 import { TabsComponent } from './contact/tabs.component';
 
-import {AboutComponent, AccordionComponent, AccordionItemComponent, AwardsComponent,  BenefitsPayrollComponent, ContactComponent, EducationComponent, EmployeeStockComponent, FooterComponent, HeaderComponent, HistoryComponent, HolidayScheduleComponent, HomeComponent, NewParentComponent, PeopleComponent, ResourcesComponent, WifiComponent} from './index';
+import {AboutComponent, AccordionComponent, AccordionItemComponent, AwardsComponent,  BbdoRoomsComponent, BenefitsPayrollComponent, ContactComponent, DetailsComponent, EducationComponent, EmployeeStockComponent, FooterComponent, HeaderComponent, HistoryComponent, HolidayScheduleComponent, IdTagsComponent, HomeComponent, NewParentComponent, OasysComponent, PaigeComponent, PeopleComponent, ReachComponent, ResourcesComponent, WifiComponent} from './index';
 
 // Service class
 import {AccordionService} from './services/accordion.service';
-import { DetailsComponent } from './ui/details/details.component';
-
 @NgModule({
   declarations: [
     AboutComponent,
@@ -33,7 +31,7 @@ import { DetailsComponent } from './ui/details/details.component';
     ResourcesComponent,
     WifiComponent,
     TabsComponent,
-    AccordionComponent, AccordionItemComponent, DetailsComponent
+    AccordionComponent, AccordionItemComponent, DetailsComponent, BbdoRoomsComponent, IdTagsComponent, PaigeComponent, OasysComponent, ReachComponent
   ],
   imports: [
     AppRoutingModule,

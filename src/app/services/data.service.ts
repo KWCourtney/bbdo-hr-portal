@@ -113,7 +113,7 @@ export class DataService {
       icon: 'benefits-oasys',
       name: 'OASYS',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
+      link: 'oasys',
       target: '_self',
     },
     {
@@ -121,7 +121,7 @@ export class DataService {
       icon: 'benefits-reach',
       name: 'Reach',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
+      link: 'reach',
       target: '_self',
     },
   ];
@@ -189,7 +189,7 @@ export class DataService {
       icon: 'resources-bbdo-rooms',
       name: 'BBDO Rooms',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
+      link: 'bbdo-rooms',
       target: '_self',
     },
     {
@@ -221,7 +221,7 @@ export class DataService {
       icon: 'resources-id-tags',
       name: 'ID Tags',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
+      link: 'id-tags',
       target: '_self',
     },
     {
@@ -229,7 +229,7 @@ export class DataService {
       icon: 'resources-paige',
       name: 'Paige',
       text: 'Lorem ipsum dolor sit amet, solum dictas vim cu, ne his ',
-      link: '#',
+      link: 'paige',
       target: '_self',
     },
     {

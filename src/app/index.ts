@@ -7,15 +7,21 @@ export * from './benefits-payroll/benefits-payroll.component';
 export * from './benefits-payroll/education/education.component';
 export * from './benefits-payroll/employee-stock/employee-stock.component';
 export * from './benefits-payroll/new-parent/new-parent.component';
+export * from './benefits-payroll/oasys/oasys.component';
+export * from './benefits-payroll/reach/reach.component';
 
 export * from './contact/contact.component';
 export * from './home/home.component';
 
 export * from './resources/resources.component';
+export * from './resources/bbdo-rooms/bbdo-rooms.component';
 export * from './resources/holiday-schedule/holiday-schedule.component';
+export * from './resources/id-tags/id-tags.component';
+export * from './resources/paige/paige.component';
 export * from './resources/wifi/wifi.component';
 
 export * from './ui/accordion/accordion.component';
 export * from './ui/accordion-item/accordion-item.component';
+export * from './ui/details/details.component';
 export * from './ui/footer/footer.component';
 export * from './ui/header/header.component';

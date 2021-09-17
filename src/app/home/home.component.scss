@@ -9,8 +9,12 @@
   .container-fluid {
     .row {
       .home__svg {
-        svg {
-          transform: scale(.9);
+        justify-content: center;
+        // border: 1px solid red;
+
+        img {
+          width: 95%;
+          // border: 1px solid yellow;
         }
       }
 
@@ -121,8 +125,9 @@
     .container-fluid {
       .row {
         .home__svg {
-          svg {
-            transform: scale(.7);
+          img {
+            width: 90%;
+            margin-top: 2em;
           }
         }
 
@@ -156,8 +161,9 @@
         justify-content: space-evenly;
 
         .home__svg {
-          svg {
-            transform: scale(.9);
+          img {
+            width: 100%;
+            margin-top: 0;
           }
         }
 
@@ -190,14 +196,11 @@
     .container-fluid {
       .row {
         .home__svg {
-          margin-right: -100px;
-          svg {
-            transform: scale(1);
-          }
+          margin-right: -50px;
         }
 
         .home__text {
-          margin-right: -100px;
+          margin-right: -50px;
 
           .home__text__welcome {
             font-size: 66px;
@@ -226,12 +229,6 @@
     .container-fluid {
       .row {
         justify-content: space-evenly;
-
-        .home__svg {
-          svg {
-             transform: scale(.95);
-          }
-        }
 
         .home__text {
           .home__text__welcome {
@@ -296,14 +293,17 @@
       .row {
 
         .home__svg {
-          svg {
-             transform: scale(.9);
+          margin-right: -30px;
+          img {
+             width: 90%
           }
         }
 
         .home__text {
+          margin-right: -30px;
+
           .home__text__welcome {
-            font-size: 88px;
+            font-size: 84px;
             letter-spacing: 1px;
             line-height: 96px;
           }
